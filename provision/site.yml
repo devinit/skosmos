@@ -1,0 +1,25 @@
+---
+- name: Update and Upgrade
+  hosts: manu-droplet
+  remote_user: skosmos
+  become: yes
+  # become_method: sudo
+
+  # pre_tasks:
+  #   - raw: apt-get install -y python-simplejson
+
+  roles:
+    - common
+    - update
+    - setup-apache-jena
+    - setup-php
+    - setup-skosmos
+    - setup-nginx
+    # - setup-swapfile
+
+# - name: Installing nginx
+#   hosts: ansible-droplet
+#   remote_user: root
+
+#   roles:
+#   - nginx

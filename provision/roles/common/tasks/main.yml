@@ -1,0 +1,9 @@
+---
+- name: Install git,
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+  - git
+  - unzip
+  - composer

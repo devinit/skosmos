@@ -1,0 +1,36 @@
+---
+- name: download skosmos
+  get_url:
+    url: https://github.com/NatLibFi/Skosmos/archive/v1.9.zip
+    dest: /var/www/html/skosmos.zip
+
+# - name: create fuseki extraction directory
+#   file:
+#     path: /var/www/html/fuseki/
+#     state: directory
+#     mode: 0755
+
+- name: remove 'skosmos' folder if available
+  file:
+    path: /var/www/html/skosmos
+    state: absent
+  ignore_errors: yes
+
+
+- name: unzip skosmos.zip
+  unarchive:
+    src: /var/www/html/skosmos.zip
+    dest: /var/www/html/
+    remote_src: True
+
+- name: rename the Skosmos-1.9 extracted folder to 'skosmos'
+  command: mv Skosmos-1.9 skosmos
+  args:
+    chdir: /var/www/html
+
+- name: Run composer update and composer install --no-dev in /var/www/html/skosmos
+  composer:
+    command: install
+    no_dev: True
+    working_dir: /var/www/html/skosmos
+

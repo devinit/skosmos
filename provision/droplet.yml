@@ -1,0 +1,127 @@
+---
+- hosts: digitalocean
+
+  vars:
+    do_token: 8cde2bd0eced36def91c5ca5e764dc01cb7450ff272acbad0ca090e6ce0ce1ca
+
+  tasks:
+
+  - name: ensure ssh key exists
+    user:
+      name: "{{ manu_user_id }}"
+      generate_ssh_key: yes
+      ssh_key_file: .ssh/id_rsa
+
+  - name: ensure key exists at DigitalOcean. If not, create one
+    digital_ocean:
+      state: present
+      command: ssh
+      name: manu_mac
+      ssh_pub_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      api_token: "{{ do_token }}"
+    register: manu_mac
+
+  # - name: create domain entry
+  #   digital_ocean_domain:
+  #     state: present
+  #     name: manu.io
+  #     ip: 127.0.0.1
+  #     api_token: "{{ do_token }}"
+  #   when: manu_mac|success
+
+  - name: ensure droplet exists
+    digital_ocean:
+      state: present
+      command: droplet
+      name: manu-droplet
+      unique_name: yes
+      size_id: 512mb
+      region_id: blr1
+      image_id: ubuntu-16-04-x64
+      ssh_key_ids: "{{ manu_mac.ssh_key.id }}"
+      api_token: "{{ do_token }}"
+    register: manu_droplet
+
+    # digital_ocean_domain:
+    #   state: present
+    #   name: humanle.org
+    #   ip: "{{ manu_droplet.ip_address }}"
+
+
+  - debug: msg="Droplet IP is {{ manu_droplet.droplet.ip_address }}"
+
+
+
+
+  # - name: Add DNS record to droplet
+  #   digital_ocean_domain:
+  #     state: present
+  #     name: www
+  #     type: "A"
+  #     # name: "{{ manu_droplet.droplet.name }}"
+  #     ip: "{{ manu_droplet.droplet.ip_address }}"
+  #     api_token: "{{ do_token }}"
+  #   when: manu_droplet|success
+
+  - name: Add mappings to /etc/hosts
+    blockinfile:
+      path: ~/Projects/DevInit/skosmos_ansible/create_droplet/hosts
+      block: |
+        [{{manu_droplet.droplet.name}}]
+        {{ manu_droplet.droplet.ip_address }}
+
+        [{{manu_droplet.droplet.name}}:vars]
+        manu_python_interpreter=/usr/bin/python3
+        apt=/usr/bin/apt
+      marker: "# {mark} ANSIBLE MANAGED BLOCK"
+    when: manu_droplet|success
+
+
+# install python on all servers after building
+- name: dependency provisioning
+  hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: false
+  tasks:
+    - name: install python2
+      raw: sudo apt-get -y install python-simplejson
+
+
+- hosts: manu-droplet
+
+  tasks:
+
+  - name: install python
+    apt:
+      name: python3
+      state: latest
+
+  # creating new sudo user
+  - name: Make sure we have a 'wheel' group
+    group:
+      name: wheel
+      state: present
+
+  - name: Allow 'wheel' group to have passwordless sudo
+    lineinfile:
+      dest: /etc/sudoers
+      state: present
+      regexp: '^%wheel'
+      line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+
+  - name: Add sudoers users to wheel group
+    user:
+      name: skosmos
+      groups: wheel
+      append: yes
+      state: present
+      createhome: yes
+
+
+  - name: Set up authorized keys for the skosmos user
+    authorized_key:
+      user: skosmos
+      key: "{{item}}"
+    with_file:
+      - ~/.ssh/id_rsa.pub

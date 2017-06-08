@@ -1,0 +1,23 @@
+API_TOKEN: 8cde2bd0eced36def91c5ca5e764dc01cb7450ff272acbad0ca090e6ce0ce1ca
+
+do_token: 8cde2bd0eced36def91c5ca5e764dc01cb7450ff272acbad0ca090e6ce0ce1ca
+
+manu_user_id: emmanuel
+
+
+# Disable All Updates
+# By default automatic updates are enabled, set this value to true to disable all automatic updates
+auto_up_disable: false
+
+# Apache Jena Fuseki:
+fuseki_version: 2.6.0
+fuseki_group_name: fuseki
+fuseki_user_name: fuseki
+fuseki_install_dir: fuseki
+fuseki_service_name: fuseki
+
+
+# Swap File Setup
+swap_path: /swapfile
+swap_size_mb: 512
+swap_count: 4   # 4 x 1G = 4GB

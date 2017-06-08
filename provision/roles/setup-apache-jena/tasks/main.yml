@@ -1,0 +1,66 @@
+---
+- name: download apache-jena-fuseki
+  get_url:
+    url: http://www-eu.apache.org/dist/jena/binaries/apache-jena-fuseki-{{fuseki_version}}.zip
+    dest: /tmp/fuseki.zip
+
+- name: remove folder if available
+  file:
+    path: /usr/local/{{fuseki_install_dir}}
+    state: absent
+  ignore_errors: yes
+
+
+- name: unzip apache-jena-fuseki
+  unarchive:
+    src: /tmp/fuseki.zip
+    dest: /tmp/
+    remote_src: True
+
+- name: rename the fuseki extracted folder to 'fuseki'
+  command: mv apache-jena-fuseki-2.6.0 fuseki
+  args:
+    chdir: /tmp
+
+- name: move fuseki from tmp to /usr/local
+  command: mv /tmp/fuseki /usr/local/{{ fuseki_install_dir }}
+
+- name: "Add {{fuseki_group_name}} group"
+  group:
+    name: "{{fuseki_group_name}}"
+    system: yes
+
+- name: "Add {{fuseki_user_name}} user"
+  user:
+    name: "{{fuseki_user_name}}"
+    group: "{{fuseki_group_name}}"
+    system: yes
+
+# - name: Create run folder for shiro ini to reside in
+#   file:
+#     path: "/usr/local/{{app_install_dir}}/run"
+#     state: directory
+#     owner: "{{fuseki_user_name}}"
+#     group: "{{fuseki_group_name}}"
+#     mode: 0750
+
+
+- name: "create log folder for {{fuseki_install_dir}}"
+  file:
+    path: /var/log/{{fuseki_install_dir}}
+    state: directory
+    owner: "{{fuseki_user_name}}"
+    group: "{{fuseki_group_name}}"
+
+
+- name: install java
+  apt:
+    name: default-jre
+    state: latest
+  register: javaInstalled
+
+- name: start jena-fuseki service
+  command: ./fuseki start
+  args:
+    chdir: /usr/local/{{fuseki_install_dir}}
+

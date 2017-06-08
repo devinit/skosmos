@@ -1,0 +1,37 @@
+---
+- hosts: digitalocean
+
+  vars:
+    do_token: 8cde2bd0eced36def91c5ca5e764dc01cb7450ff272acbad0ca090e6ce0ce1ca
+
+  tasks:
+
+  - name: ensure ssh key exists
+    user:
+      name: "{{ ansible_user_id }}"
+      generate_ssh_key: yes
+      ssh_key_file: .ssh/id_rsa
+
+  - name: ensure key exists at DigitalOcean. If not, create one
+    digital_ocean:
+      state: present
+      command: ssh
+      name: manu_mac
+      ssh_pub_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      api_token: "{{ do_token }}"
+    register: manu_mac
+
+  - name: delete droplet
+    digital_ocean:
+      state: absent
+      command: droplet
+      name: manu-droplet
+      unique_name: yes
+      size_id: 512mb
+      region_id: blr1
+      image_id: ubuntu-16-04-x64
+      ssh_key_ids: "{{ manu_mac.ssh_key.id }}"
+      api_token: "{{ do_token }}"
+    register: manu_droplet
+
+  - debug: msg="droplet manu-droplet DELETED"

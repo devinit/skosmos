@@ -1,0 +1,9 @@
+
+# BEGIN ANSIBLE MANAGED BLOCK
+[manu-droplet]
+46.101.219.135
+
+[manu-droplet:vars]
+manu_python_interpreter=/usr/bin/python3
+apt=/usr/bin/apt
+# END ANSIBLE MANAGED BLOCK
