@@ -14,7 +14,7 @@
     - setup-apache-jena
     - setup-php
     - setup-skosmos
-    - setup-nginx
+    - setup-apache
     # - setup-swapfile
 
 # - name: Installing nginx

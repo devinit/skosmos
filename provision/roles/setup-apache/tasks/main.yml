@@ -24,6 +24,6 @@
 - name: copy info.php to webroot
   template:
     src: info.php.j2
-    dest: /var/www/html/info.php
+    dest: /var/www/skosmos/info.php
     mode: 0755
   notify: restart apache2

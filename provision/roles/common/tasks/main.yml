@@ -7,3 +7,4 @@
   - git
   - unzip
   - composer
+  - libapache2-mod-php7.0

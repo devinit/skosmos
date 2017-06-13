@@ -1,36 +1,20 @@
 ---
-- name: download skosmos
-  get_url:
-    url: https://github.com/NatLibFi/Skosmos/archive/v1.9.zip
-    dest: /var/www/html/skosmos.zip
+- file: path=/home/skosmos/srv/checkout mode=0755 state=directory
 
-# - name: create fuseki extraction directory
-#   file:
-#     path: /var/www/html/fuseki/
-#     state: directory
-#     mode: 0755
+- name: send key to remote deploy user
+  copy: src=keys/skosmos dest=/home/skosmos/.ssh/priv_key mode=0600
 
-- name: remove 'skosmos' folder if available
-  file:
-    path: /var/www/html/skosmos
-    state: absent
-  ignore_errors: yes
+- name: checkout from bitbucket
+  git: repo=git@github.com:devinit/skosmos.git dest=/var/www/skosmos key_file=/home/skosmos/.ssh/priv_key accept_hostkey=true force=yes
 
+- name : updating dependencies with composer
+  composer:
+    command: update
+    working_dir: /var/www/skosmos
+    no_dev: True
 
-- name: unzip skosmos.zip
-  unarchive:
-    src: /var/www/html/skosmos.zip
-    dest: /var/www/html/
-    remote_src: True
-
-- name: rename the Skosmos-1.9 extracted folder to 'skosmos'
-  command: mv Skosmos-1.9 skosmos
-  args:
-    chdir: /var/www/html
-
-- name: Run composer update and composer install --no-dev in /var/www/html/skosmos
+- name : install dependencies with composer
   composer:
     command: install
+    working_dir: /var/www/skosmos
     no_dev: True
-    working_dir: /var/www/html/skosmos
-
