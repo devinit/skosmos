@@ -12,7 +12,26 @@
 @prefix isothes: <http://purl.org/iso25964/skos-thes#> .
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
 @prefix : <#> .
+:stw a skosmos:Vocabulary, void:Dataset ;
+    dc:title "STW Thesaurus for Economics"@en ;
+    skosmos:shortName "STW";
+    dc:subject :cat_general ;
+    void:uriSpace "http://zbw.eu/stw/";
+    skosmos:language "en", "de";
+    skosmos:defaultLanguage "de";
+    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://zbw.eu/stw/> .
 
+:pyt a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Pip Surveys "@en ;
+    skosmos:shortName "PSU";
+    dc:subject :cat_general ;
+    void:uriSpace "http://joinedupdata.org/Indicators/";
+    skosmos:language "en", "de";
+    skosmos:defaultLanguage "en";
+    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://joinedupdata.org/Indicators/> .
+    
 :ysa a skosmos:Vocabulary, void:Dataset ;
 	dc:title "YSA - Yleinen suomalainen asiasanasto"@fi,
 		"YSA - Allmän tesaurus på finska"@sv,

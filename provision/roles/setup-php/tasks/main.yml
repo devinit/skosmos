@@ -22,10 +22,80 @@
   raw: phpenmod mcrypt
   when: phpInstalled | success
 
+
+- name: install php modules
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+  - php-xml
+  - php-mysqlnd
+  - php-opcache
+  - php-pdo
+  - php-calendar
+  - php-ctype
+  - php-curl
+  - php-exif
+  - php-fileinfo
+  - php-ftp
+  - php-gettext
+  - php-iconv
+  - php-json
+  - php-mbstring
+  - php-mcrypt
+  - php-mysqli
+  # - php-pdo_mysql
+  - php-phar
+  - php-posix
+  - php-readline
+  - php-shmop
+  - php-sockets
+  - php-sysvmsg
+  - php-sysvsem
+  - php-sysvshm
+  - php-tokenizer
+
+- name: enable php modules
+  command: phpenmod "{{ item }}"
+  with_items:
+  - mysqlnd
+  - opcache
+  - pdo
+  - calendar
+  - ctype
+  - curl
+  - exif
+  - fileinfo
+  - ftp
+  - gettext
+  - iconv
+  - json
+  - mbstring
+  - mcrypt
+  - mysqli
+  - pdo_mysql
+  - phar
+  - posix
+  - readline
+  - shmop
+  - sockets
+  - sysvmsg
+  - sysvsem
+  - sysvshm
+  - tokenizer
+
 - name: copy php.ini to /etc/php/7.0/fpm/
   template:
     src: php.ini.j2
-    dest: /etc/php/7.0/fpm/
+    dest: /etc/php/7.0/fpm/php.ini
+    mode: 0755
+    backup: yes
+  when: phpInstalled | success
+
+- name: copy php.ini to /etc/php/7.0/apache2/
+  template:
+    src: php.ini.j2
+    dest: /etc/php/7.0/apache2/php.ini
     mode: 0755
     backup: yes
   when: phpInstalled | success
