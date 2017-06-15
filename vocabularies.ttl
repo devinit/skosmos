@@ -18,7 +18,7 @@
     skosmos:shortName "SUR";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Surveys/";
-    skosmos:language "en",;
+    skosmos:language "en","de";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/Surveys/> .
@@ -28,7 +28,7 @@
     skosmos:shortName "IND";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Indicators/";
-    skosmos:language "en",;
+    skosmos:language "en","de";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/Indicators/> .
@@ -38,7 +38,7 @@
     skosmos:shortName "SEC";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/sectors/";
-    skosmos:language "en",;
+    skosmos:language "en","de";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/sectors/> .
@@ -48,7 +48,7 @@
     skosmos:shortName "SUP";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/supranational";
-    skosmos:language "en",;
+    skosmos:language "en","de";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/supranational/> .
@@ -62,9 +62,3 @@
 	skos:prefLabel "Yleiskäsitteet"@fi,
 		"Allmänna begrepp"@sv,
 		"General concepts"@en .
-
-mdrtype:THESAURUS a skos:Concept ;
-	skos:prefLabel "Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de, "Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi, "Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it, "Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl, "Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro, "Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, "Tesaurus"@sv .
-
-mdrtype:ONTOLOGY a skos:Concept ;
-    skos:prefLabel "Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de, "Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi, "Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it, "Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl, "Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt, "Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es, "Ontologi"@sv .
