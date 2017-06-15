@@ -28,7 +28,7 @@
     skosmos:shortName "IND";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Indicators/";
-    skosmos:language "en";
+    skosmos:language "en",;
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/Indicators/> .
@@ -38,7 +38,7 @@
     skosmos:shortName "SEC";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/sectors/";
-    skosmos:language "en";
+    skosmos:language "en",;
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/sectors/> .
@@ -48,7 +48,7 @@
     skosmos:shortName "SUP";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/supranational";
-    skosmos:language "en";
+    skosmos:language "en",;
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/supranational/> .
