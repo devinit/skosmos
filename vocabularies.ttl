@@ -31,7 +31,7 @@
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/Indicators/>
+    skosmos:sparqlGraph <http://joinedupdata.org/Indicators/> .
 
 :sec a skosmos:Vocabulary, void:Dataset ;
     dc:title "Sectors "@en ;
@@ -41,7 +41,7 @@
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/sectors/>
+    skosmos:sparqlGraph <http://joinedupdata.org/sectors/> .
 
 :sup a skosmos:Vocabulary, void:Dataset ;
     dc:title "Supranational regions and groupings "@en ;
@@ -51,7 +51,7 @@
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/supranational/>
+    skosmos:sparqlGraph <http://joinedupdata.org/supranational/> .
 
 :categories a skos:ConceptScheme;
 	skos:prefLabel "Skosmos Vocabulary Categories"@en .
