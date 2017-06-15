@@ -1,0 +1,14 @@
+[program:fuseki-server]
+command = "/usr/local/fuseki/fuseki-server"
+process_name = fuseki-server
+directory = /usr/local/fuseki
+priority = 100
+redirect_stderr = true
+stdout_logfile = /var/log/fuseki-server.log
+stopsignal = INT
+autostart=true
+autorestart=true
+numprocs=1
+environment=PATH="/usr/lib/jvm/java-8-openjdk-amd64/bin/"
+environment=C_FORCE_ROOT="true"
+user=root

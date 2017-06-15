@@ -4,13 +4,6 @@
     url: http://www-eu.apache.org/dist/jena/binaries/apache-jena-fuseki-{{fuseki_version}}.zip
     dest: /tmp/fuseki.zip
 
-- name: remove folder if available
-  file:
-    path: /usr/local/{{fuseki_install_dir}}
-    state: absent
-  ignore_errors: yes
-
-
 - name: unzip apache-jena-fuseki
   unarchive:
     src: /tmp/fuseki.zip
@@ -21,9 +14,11 @@
   command: mv apache-jena-fuseki-2.6.0 fuseki
   args:
     chdir: /tmp
+  ignore_errors: yes
 
 - name: move fuseki from tmp to /usr/local
   command: mv /tmp/fuseki /usr/local/{{ fuseki_install_dir }}
+  ignore_errors: yes
 
 - name: "Add {{fuseki_group_name}} group"
   group:
@@ -59,8 +54,13 @@
     state: latest
   register: javaInstalled
 
-- name: start jena-fuseki service
-  command: ./fuseki start
-  args:
-    chdir: /usr/local/{{fuseki_install_dir}}
+- apt: name={{ item }} state=present
+  with_items:
+    - supervisor
+
+- template: src=fuseki.supervisor.conf.j2 dest=/etc/supervisor/conf.d/fuseki.conf
+
+- service: name=supervisor state=restarted
+  
+- supervisorctl: name=fuseki-server state=restarted
 
