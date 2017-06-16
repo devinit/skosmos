@@ -48,13 +48,13 @@ define ("LOG_BROWSER_CONSOLE", FALSE);
 define ("LOG_FILE_NAME", NULL);
 
 # customize the service name
-define("SERVICE_NAME", "Skosmos");
+define("SERVICE_NAME", "Joined-Up Data Standards");
 
 // customize the service logo by pointing to your logo here. 
 define("SERVICE_LOGO", "./resource/pics/logo.png");
 
 // customize the css by adding your own stylesheet
-define("CUSTOM_CSS", "resource/css/stylesheet.css");
+define("CUSTOM_CSS", "resource/css/custom.css");
 
 // Customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
 // define("BASE_HREF", "http://localhost/Skosmos/");

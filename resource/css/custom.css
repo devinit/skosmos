@@ -1,0 +1,28 @@
+#service-logo {
+    width: 350px;
+    margin-top: 60px;
+}
+
+#lang-dropdown-toggle, .multiselect {
+	background-color: #f0826d; 
+}
+
+html, body {
+	background-color: #6a6569; 
+}
+
+#service-name {
+	color: black;
+}
+
+#search-all-button {
+	background-color: #f0826d; 
+}
+
+.header-left > h1 {
+	background-color: #f0826d;
+}
+
+.headerbar-coloured{
+	background-color: #f0826d;
+}
