@@ -53,6 +53,16 @@
     void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
     skosmos:sparqlGraph <http://joinedupdata.org/supranational/> .
 
+:ken a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Kenya Data Modal "@en ;
+    skosmos:shortName "KEN";
+    dc:subject :cat_general ;
+    void:uriSpace "http://joinedupdata.org/Kenya-Data-Model/";
+    skosmos:language "en","de";
+    skosmos:defaultLanguage "en";
+    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://joinedupdata.org/kenya-Data-Model/> .
+
 :categories a skos:ConceptScheme;
 	skos:prefLabel "Skosmos Vocabulary Categories"@en .
 
