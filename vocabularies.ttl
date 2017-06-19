@@ -64,7 +64,7 @@
     skosmos:sparqlGraph <http://joinedupdata.org/kenya-Data-Model/> .
 
 :categories a skos:ConceptScheme;
-	skos:prefLabel "Skosmos Vocabulary Categories"@en .
+	skos:prefLabel "Vocabulary Categories"@en .
 
 :cat_general a skos:Concept ;
 	skos:topConceptOf :categories ;
