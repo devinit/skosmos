@@ -9,8 +9,6 @@ define("SPARQL_TIMEOUT", 20); // SPARQL HTTP request timeout in seconds
 
 // interface languages available, and the corresponding system locales
 $LANGUAGES = array(
-  'fi' => 'fi_FI.utf8',
-  'sv' => 'sv_SE.utf8',
   'en' => 'en_GB.utf8'
 );
 
@@ -50,7 +48,7 @@ define ("LOG_FILE_NAME", NULL);
 # customize the service name
 define("SERVICE_NAME", "Joined-Up Data Standards");
 
-// customize the service logo by pointing to your logo here. 
+// customize the service logo by pointing to your logo here.
 define("SERVICE_LOGO", "./resource/pics/logo.png");
 
 // customize the css by adding your own stylesheet
@@ -59,7 +57,7 @@ define("CUSTOM_CSS", "resource/css/custom.css");
 // Customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
 // define("BASE_HREF", "http://localhost/Skosmos/");
 
-// whether to display the ui language selection as a dropdown (useful for cases where there are more than 3 languages) 
+// whether to display the ui language selection as a dropdown (useful for cases where there are more than 3 languages)
 define("UI_LANGUAGE_DROPDOWN", FALSE);
 
 // whether to enable the spam honey pot or not

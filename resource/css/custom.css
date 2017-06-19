@@ -45,7 +45,7 @@
 }
 
 html, body {
- background-color: #6a6569;
+ background-color: #d5dbde;
  font-family: geomanist !important;
 }
 
@@ -67,9 +67,23 @@ html, body {
 
 body #nav-menu {
   background-color: white ;
-  margin-left: -410px;
+  margin-left: -425px;
   width: 400px;
   height: 300px;
   position: absolute;
   padding: 15px;
+}
+
+.about-logo {
+  background-color: #f0826d;
+  margin-left: -425px;
+  padding-left:10px;
+  margin-bottom: 10px;
+  height:50px;
+  vertical-align: middle;
+  color: white;
+}
+
+#about {
+  width: 815px !important;
 }
