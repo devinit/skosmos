@@ -11,9 +11,56 @@
 <a href="http://github.com/NatLibFi/Skosmos">Skosmos på GitHub</a>
 
 {% elseif request.lang == 'en' %}
+<h3>About the JUDS Thesaurus</h3>
+<p>This thesaurus is a free repository of data standards that have been mapped
+by the Joined-up Data Standards (JUDS) project.</p>
+<br />
+<p>The project aims to generate the political will and to find technical
+solutions to join up data standards, so that data can be turned into useable
+information for a better understanding of development challenges and how to
+design, implement and monitor more effective policies to address them
+</p>
+<br />
 
-<h4>About</h4>
-<p>Skosmos is a web based open source ontology browser.</p>
-<a href="http://github.com/NatLibFi/Skosmos">Skosmos GitHub -repository</a>
+<p>Initially we mapped these standards to drive the JUDS discussion papers,
+each of which focuses on an area where there are multiple standards that are
+used for an identical or similar purpose. We’ve used the thesaurus to cross-map
+the standards and use its linked data outputs to build visualisations that
+highlight issues. </p>
+<br />
+<p>The thesaurus now features a handy search or translate tool, so you can query
+the mappings of the data standards held here to understand the relationships between them.
+</p>
+<br />
+<p>
+This thesaurus is continually expanding. We will add any new standards to the 
+list of data standards when they become available.
+</p>
+<br />
+
+<h3>How the thesaurus works</h3>
+<p>
+The data standards held in the thesaurus are linked together using the Simple
+Knowledge Organisation System (SKOS). SKOS not only provides a universal
+‘language’ for defining relationships between concepts (terms) in a single
+taxonomy (vocabulary, thesaurus or classification scheme) but also a means of
+systematically comparing concepts in different taxonomies.
+</p>
+
+<h3>Collaborate with us</h3>
+<p>
+We’re seeking to collaborate with experts interested in (or responsible for)
+the standards covered by our discussion papers. Collaborators will have access
+to the JUDS thesaurus server and will be able to engage in discussions on
+cross-mapping issues.
+</p>
+
+<p>
+Separate project workspaces are also available on the thesaurus server for use
+by other open data standards that could benefit from the platform and its technology.
+</p>
+
+<p> If you are interested in working with us please Contact us.
+</p>
 
 {% endif %}

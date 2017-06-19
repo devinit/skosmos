@@ -3,17 +3,27 @@
 {% block headernav %}{% endblock %}
 {% block content %}
 <div class="about-logo">
-  <h1>{% trans "About" %}</h1>
+  <h1></h1>
 </div>
+
+
 <div id="about">
+  <div id="nav-menu">
+  <br>
+  <h3>Thesaurus</h3>
+    <ul>
+      <li><a href="#">Browse</a></li>
+      <li><a href="#">Download</a></li>
+      <li><a href="#">SPARQL endpoint</a></li>
+    </ul>
+
+  <h3>Resources</h3>
+    <ul>
+      <li><a href="#">Search & Translate Tool</a></li>
+    </ul>
+  </div>
   <div class="about-content">
     {% include ['about.inc', 'about.inc.dist']  %}
   </div>
-</div>
-<div class="credits">
-  <p>{% if ServiceName != 'SERVICE_NAME' %}{{ ServiceName }}{% else %}Skosmos{% endif %} {% trans "layout designed by Hahmo" %}</p>
-</div>
-<div class="version">
-  <p>{% trans %}Skosmos version {{ version }}{% endtrans %}</p>
 </div>
 {% endblock %}

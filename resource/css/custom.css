@@ -1,28 +1,75 @@
+@font-face {
+    font-family: 'geomanist';
+    src: url('../fonts/eot/geomanist-regular-webfont.eot');
+    src: url('../fonts/eot/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/geomanist-regular-webfont.woff2') format('woff2'),
+         url('../fonts/woff/geomanist-regular-webfont.woff') format('woff'),
+         url('../fonts/ttf/geomanist-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('../fonts/eot/geomanist-light-webfont.eot');
+    src: url('../fonts/eot/geomanist-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/geomanist-light-webfont.woff2') format('woff2'),
+         url('../fonts/woff/geomanist-light-webfont.woff') format('woff'),
+         url('../fonts/ttf/geomanist-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('../fonts/eot/geomanist-bold-webfont.eot');
+    src: url('../fonts/eot/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/geomanist-bold-webfont.woff2') format('woff2'),
+         url('../fonts/woff/geomanist-bold-webfont.woff') format('woff'),
+         url('../fonts/ttf/geomanist-bold-webfont.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+
+}
+
 #service-logo {
-    width: 350px;
-    margin-top: 60px;
+   width: 350px;
+   margin-top: 60px;
 }
 
 #lang-dropdown-toggle, .multiselect {
-	background-color: #f0826d; 
+ background-color: #f0826d;
 }
 
 html, body {
-	background-color: #6a6569; 
+ background-color: #6a6569;
+ font-family: geomanist !important;
 }
 
 #service-name {
-	color: black;
+ color: black;
 }
 
 #search-all-button {
-	background-color: #f0826d; 
+ background-color: #f0826d;
 }
 
 .header-left > h1 {
-	background-color: #f0826d;
+ background-color: #f0826d;
 }
 
 .headerbar-coloured{
-	background-color: #f0826d;
+ background-color: #f0826d;
+}
+
+body #nav-menu {
+  background-color: white ;
+  margin-left: -410px;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  padding: 15px;
 }
