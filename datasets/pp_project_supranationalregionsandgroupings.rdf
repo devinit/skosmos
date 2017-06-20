@@ -333,9 +333,10 @@
 
 <rdf:Description rdf:about="http://joinedupdata.org/geo-pol/security_groupings">
 	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-01T16:22:59Z</dcterms:created>
-	<dcterms:title xml:lang="en">Security Groupings</dcterms:title>
+	<!-- <dcterms:title xml:lang="en">Security Groupings</dcterms:title> -->
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<rdfs:label xml:lang="en">Security Groupings</rdfs:label>
+	<!-- <rdfs:label xml:lang="en">Security Groupings</rdfs:label> -->
+	<dcterms:description xml:lang="en">This project contains machine- and human-readable mappings of international classifications of countries with respect to economic, geographic, health or security groupings. The classifications include those by the United Nations, the Organisation for Economic Co-operation and Development (OECD), World Bank, World Health Organisation, and International Monetary Fund amongst others. This project is cross-linked to other data standards hosted on this thesaurus.</dcterms:description>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/geo-pol/world_bank_fragile_and_conflict_affected_situations"/>
 </rdf:Description>
 
