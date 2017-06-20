@@ -216,13 +216,11 @@
 	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beata_lisowska</dcterms:contributor>
 	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-29T14:36:16Z</dcterms:created>
 	<dcterms:creator xml:lang="en">beata_lisowska</dcterms:creator>
-	<dcterms:description xml:lang="en">World Bank Themes and Sectors provide a classification for Projects and Operations activities by the World Bank. </dcterms:description>
-	<dcterms:subject xml:lang="en">World Bank Themes</dcterms:subject>
+	<dcterms:description xml:lang="en">This project links international data standards used as classifications for socio-economic activities. The project offers a machine-readable cross-walk (mapping) between major standards developed by the United Nations, World Bank and the Organisation for Economic Co-operation and Development (OECD). The data standards in this project are also mapped in a machine-readable way to standards in other projects in this Thesaurus such as: indicators, surveys, supranational regions and groupings as well as Natural Resource Governance Institute (NRGI). </dcterms:description>
+	<dcterms:subject xml:lang="en">Socio-economic sectors</dcterms:subject>
 	<dcterms:publisher xml:lang="en">Development Initiatives</dcterms:publisher>
-	<dcterms:title xml:lang="en">world_bank_themes</dcterms:title>
 	<identifier xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">world_bank_themes</identifier>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<rdfs:label xml:lang="en">world_bank_themes</rdfs:label>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Sectors/world_bank_themes/economic-management_wb"/>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Sectors/world_bank_themes/environment-and-natural-resources-management_wb"/>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Sectors/world_bank_themes/financial-and-private-sector-development_wb"/>
@@ -236,6 +234,7 @@
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Sectors/world_bank_themes/urban-development_wb"/>
 	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-12T10:19:46Z</dcterms:modified>
 </rdf:Description>
+
 
 <rdf:Description rdf:about="http://joinedupdata.org/Sectors/cofog/agriculture--cs">
 	<crs xmlns="http://joinedupdata.org/BestMatch/" rdf:resource="http://joinedupdata.org/Sectors/crs/agriculture"/>
@@ -5456,7 +5455,7 @@ Use code 15230 for bilateral participation in international peacekeeping operati
 
 Human rights defenders and human rights NGOs; human rights advocacy activism mobilisation; awareness raising and public human rights education
 
-Human rights programming targeting specific groups eg children persons with disabilities migrants ethnic religious linguistic and sexual minorities indigenous people and those suffering from caste discrimination victims of trafficking victims of torture 
+Human rights programming targeting specific groups eg children persons with disabilities migrants ethnic religious linguistic and sexual minorities indigenous people and those suffering from caste discrimination victims of trafficking victims of torture
 
 Use code 15230 when in the context of a peacekeeping operation</skos:definition>
 	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15160</skos:notation>
@@ -5658,7 +5657,7 @@ Use code 15230 when in the context of a peacekeeping operation</skos:definition>
 
 Measures that support the improvement of legal frameworks constitutions laws and regulations; legislative and constitutional drafting and review; legal reform; integration of formal and informal systems of law
 
-Public legal education; dissemination of information on entitlements and remedies for injustice; awareness campaigns 
+Public legal education; dissemination of information on entitlements and remedies for injustice; awareness campaigns
 
 Use codes 152xx for activities that are primarily aimed at supporting security system reform or undertaken in connection with post-conflict and peace building activities</skos:definition>
 	<skos:narrowMatch rdf:resource="http://joinedupdata.org/Indicators/sdg/peace-justive-and-strong-institutions"/>
