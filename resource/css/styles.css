@@ -394,7 +394,7 @@ ul.dropdown-menu > li:last-child > input {
 }
 
 .search-vocab-text {
-  background-color: #3c535b;
+  background-color: #f0826d;  /* github issue #17 resolved*/
   opacity: 0.95;
   height: 40px;
   float: left;
