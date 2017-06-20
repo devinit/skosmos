@@ -20,48 +20,46 @@
     void:uriSpace "http://joinedupdata.org/Surveys/";
     skosmos:language "en","de";
     skosmos:defaultLanguage "en";
-    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/Surveys/> .
+    void:sparqlEndpoint <http://localhost:3030/Surveys/sparql> .
+
 
 :ind a skosmos:Vocabulary, void:Dataset ;
     dc:title "Indicators "@en ;
     skosmos:shortName "IND";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Indicators/";
-    skosmos:language "en","de";
+    skosmos:language "en";
     skosmos:defaultLanguage "en";
-    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/Indicators/> .
+    void:sparqlEndpoint <http://localhost:3030/Indicators/sparql> .
+
 
 :sec a skosmos:Vocabulary, void:Dataset ;
     dc:title "Sectors "@en ;
     skosmos:shortName "SEC";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/sectors/";
-    skosmos:language "en","de";
+    skosmos:language "en";
     skosmos:defaultLanguage "en";
-    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/sectors/> .
+    void:sparqlEndpoint <http://localhost:3030/Sectors/sparql> .
+
 
 :sup a skosmos:Vocabulary, void:Dataset ;
     dc:title "Supranational regions and groupings "@en ;
     skosmos:shortName "SUP";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/supranational";
-    skosmos:language "en","de";
+    skosmos:language "en";
     skosmos:defaultLanguage "en";
-    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/supranational/> .
+    void:sparqlEndpoint <http://localhost:3030/supranational/sparql> .
 
 :ken a skosmos:Vocabulary, void:Dataset ;
     dc:title "Kenya Data Modal "@en ;
     skosmos:shortName "KEN";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Kenya-Data-Model/";
-    skosmos:language "en","de";
+    skosmos:language "en";
     skosmos:defaultLanguage "en";
-    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://joinedupdata.org/kenya-Data-Model/> .
+    void:sparqlEndpoint <http://localhost:3030/kenya/sparql> .
 
 :categories a skos:ConceptScheme;
 	skos:prefLabel "Vocabulary Categories"@en .

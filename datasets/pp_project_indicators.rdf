@@ -76,11 +76,9 @@
 	<dcterms:creator xml:lang="en">beata_lisowska</dcterms:creator>
 	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T16:26:46Z</dcterms:modified>
 	<dcterms:publisher xml:lang="en">Development Initiatives</dcterms:publisher>
-	<dcterms:subject xml:lang="en">World Development Indicators (WDI)</dcterms:subject>
-	<dcterms:title xml:lang="en">wdi</dcterms:title>
+	<dcterms:subject xml:lang="en">This project hosts international monitoring data standards (indicators) such as Sustainable Developmental Goals, Millennium Developmental Goals (MDGs) or World Development Indicators (WDI). The indicators are mapped in a machine- and human-readable format to both each other and across the projects maintained on this thesaurus such as “sectors”, “ supranational regions and grouping” and “household surveys”. The cross-mapping of standards is an ongoing process and the list of the data standards in this project will increase as our work progresses.</dcterms:subject>
 	<identifier xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wdi</identifier>
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<rdfs:label xml:lang="en">wdi</rdfs:label>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Indicators/wdi/Education_wdi"/>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Indicators/wdi/Environment_wdi"/>
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Indicators/wdi/Financial-Sector_wdi"/>
