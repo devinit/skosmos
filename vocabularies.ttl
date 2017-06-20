@@ -20,6 +20,7 @@
     void:uriSpace "http://joinedupdata.org/Surveys/";
     skosmos:language "en","de";
     skosmos:defaultLanguage "en";
+    skosmos:mainConceptScheme <http://joinedupdata.org/Surveys/>;
     void:sparqlEndpoint <http://localhost:3030/Surveys/sparql> .
 
 
@@ -30,6 +31,7 @@
     void:uriSpace "http://joinedupdata.org/Indicators/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
+    skosmos:mainConceptScheme <http://joinedupdata.org/Indicators>;
     void:sparqlEndpoint <http://localhost:3030/Indicators/sparql> .
 
 
@@ -40,6 +42,7 @@
     void:uriSpace "http://joinedupdata.org/sectors/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
+    skosmos:mainConceptScheme <http://joinedupdata.org/Sectors>;
     void:sparqlEndpoint <http://localhost:3030/Sectors/sparql> .
 
 
@@ -50,6 +53,7 @@
     void:uriSpace "http://joinedupdata.org/supranational";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
+    skosmos:mainConceptScheme <http://joinedupdata.org/geo-pol>;
     void:sparqlEndpoint <http://localhost:3030/supranational/sparql> .
 
 :ken a skosmos:Vocabulary, void:Dataset ;
@@ -59,6 +63,7 @@
     void:uriSpace "http://joinedupdata.org/Kenya-Data-Model/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
+    skosmos:mainConceptScheme <http://joinedupdata.org/Kenya>;
     void:sparqlEndpoint <http://localhost:3030/kenya/sparql> .
 
 :categories a skos:ConceptScheme;

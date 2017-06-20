@@ -212,7 +212,7 @@
 	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-12T10:19:37Z</dcterms:modified>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://joinedupdata.org/Sectors/world_bank_themes">
+<rdf:Description rdf:about="http://joinedupdata.org/Sectors">
 	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beata_lisowska</dcterms:contributor>
 	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-29T14:36:16Z</dcterms:created>
 	<dcterms:creator xml:lang="en">beata_lisowska</dcterms:creator>

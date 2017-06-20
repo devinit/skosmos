@@ -70,7 +70,7 @@
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/Indicators/sdg/zero-hunger"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://joinedupdata.org/Indicators/wdi">
+<rdf:Description rdf:about="http://joinedupdata.org/Indicators">
 	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beata_lisowska</dcterms:contributor>
 	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T14:01:57Z</dcterms:created>
 	<dcterms:creator xml:lang="en">beata_lisowska</dcterms:creator>

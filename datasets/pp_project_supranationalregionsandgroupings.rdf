@@ -331,7 +331,7 @@
 	<skos:hasTopConcept rdf:resource="http://joinedupdata.org/geo-pol/unesco_regions"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://joinedupdata.org/geo-pol/security_groupings">
+<rdf:Description rdf:about="http://joinedupdata.org/geo-pol">
 	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-01T16:22:59Z</dcterms:created>
 	<!-- <dcterms:title xml:lang="en">Security Groupings</dcterms:title> -->
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>

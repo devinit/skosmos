@@ -43,15 +43,15 @@
   <skos:hasTopConcept rdf:resource="http://joinedupdata.org/Kenya-Data-Model/false_3"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://joinedupdata.org/Kenya-Data-Model/national-statistics">
+<rdf:Description rdf:about="http://joinedupdata.org/Kenya">
   <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-19T15:28:01Z</dcterms:created>
   <dcterms:creator xml:lang="en">beata_lisowska</dcterms:creator>
-  <dcterms:description xml:lang="en">data collected by national statistics office</dcterms:description>
+  <dcterms:description xml:lang="en">This project links national data standards used as classificators in Kenya. This project offers a machine-readable cross-walk (mapping) between national indicators published by Kenya National Bureau of Statistics (KNBS), Medium-term expenditure framework (MTEF) and classifications of Kenyan national budgetary spending. These standards are also mapped to international classifications in other projects in this Thesaurus such as: Indicators, surveys and supranational regions and groups.</dcterms:description>
   <dcterms:publisher xml:lang="en">Development Initiatives</dcterms:publisher>
-  <dcterms:subject xml:lang="en">national statistics </dcterms:subject>
-  <dcterms:title xml:lang="en">national statistics</dcterms:title>
+  <dcterms:subject xml:lang="en">National Statistics </dcterms:subject>
+  <!-- <dcterms:title xml:lang="en">Kenya Data Model</dcterms:title> -->
   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-  <rdfs:label xml:lang="en">national statistics</rdfs:label>
+  <!-- <rdfs:label xml:lang="en">national statistics</rdfs:label> -->
 </rdf:Description>
 
 <rdf:Description rdf:about="http://joinedupdata.org/Kenya-Data-Model/false">
