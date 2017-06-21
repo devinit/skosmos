@@ -12,7 +12,7 @@
     <label class="sr-only" for="multiselect">{% trans "Search from vocabulary" %}</label>
     <select class="multiselect" id="multiselect" multiple="multiple">
     {% for vocab in sorted_vocabs %}
-      <option value="{{ vocab.id }}" data-voc-shortname="{{ vocab.shortname }}" data-label="{{ vocab.title }}" title="{{ vocab.title }}">{{ vocab.shortname }}</option>
+      <option value="{{ vocab.id }}" data-voc-shortname="{{ vocab.shortname }}" data-label="{{ vocab.title }}" title="{{ vocab.title }}">{{ vocab.title }}</option>
     {% endfor %}
     </select>
   {% endif %}

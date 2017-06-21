@@ -85,6 +85,22 @@ body #nav-menu {
 }
 
 #about {
-  width: 815px !important;
+  width: 765px !important;
   padding-top: 2px;
+}
+
+.dropdown-toggle:hover, .btn.dropdown-toggle:focus, .open > .dropdown-toggle.btn-default {
+  background-color: #f0826d;
+}
+
+li.active label.checkbox{
+  background-color: #f0826d;
+}
+/*
+li.active label.checkbox :hover{
+  background-color: #f0826d;
+}*/
+
+.multiselect-container>li :hover {
+    background-color: #f8c1b2;
 }

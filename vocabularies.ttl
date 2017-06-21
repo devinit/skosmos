@@ -18,7 +18,7 @@
     skosmos:shortName "SUR";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Surveys/";
-    skosmos:language "en","de";
+    skosmos:language "en";
     skosmos:defaultLanguage "en";
     skosmos:mainConceptScheme <http://joinedupdata.org/Surveys/>;
     void:sparqlEndpoint <http://localhost:3030/Surveys/sparql> .
