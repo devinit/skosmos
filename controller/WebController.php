@@ -156,7 +156,7 @@ class WebController extends Controller
     }
 
     /**
-     * Determines a css class that controls width and positioning of the vocabulary list element. 
+     * Determines a css class that controls width and positioning of the vocabulary list element.
      * The layout is wider if the left/right box templates have not been provided.
      * @return string css class for the container eg. 'voclist-wide' or 'voclist-right'
      */
@@ -186,7 +186,7 @@ class WebController extends Controller
         $categoryLabel = $this->model->getClassificationLabel($request->getLang());
         $sortedVocabs = $this->model->getVocabularyList(false, true);
         $langList = $this->model->getLanguages($request->getLang());
-        $listStyle = $this->listStyle(); 
+        $listStyle = $this->listStyle();
 
         // render template
         echo $template->render(
@@ -218,7 +218,7 @@ class WebController extends Controller
             return;
         }
         $template = (in_array('skos:Concept', $results[0]->getType()) || in_array('skos:ConceptScheme', $results[0]->getType())) ? $this->twig->loadTemplate('concept-info.twig') : $this->twig->loadTemplate('group-contents.twig');
-        
+
         $crumbs = $vocab->getBreadCrumbs($request->getContentLang(), $uri);
         echo $template->render(array(
             'search_results' => $results,
@@ -331,6 +331,25 @@ class WebController extends Controller
     public function invokeAboutPage($request)
     {
         $template = $this->twig->loadTemplate('about.twig');
+        $this->setLanguageProperties($request->getLang());
+        $url = $request->getServerConstant('HTTP_HOST');
+        $version = $this->model->getVersion();
+
+        echo $template->render(
+            array(
+                'languages' => $this->languages,
+                'version' => $version,
+                'server_instance' => $url,
+                'request' => $request,
+            ));
+    }
+
+    /**
+     * Invokes the Search page for the Skosmos service.
+     */
+    public function invokeTranslatePage($request)
+    {
+        $template = $this->twig->loadTemplate('search.twig');
         $this->setLanguageProperties($request->getLang());
         $url = $request->getServerConstant('HTTP_HOST');
         $version = $this->model->getVersion();

@@ -1,11 +1,11 @@
-{% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' %}<div class="row"><div class="headerbar-coloured"></div>{% endif %}
+{% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate'  %}<div class="row"><div class="headerbar-coloured"></div>{% endif %}
 {% if request.vocabid %}
 <div class="header-left">
   <h1><a href="{% if request.vocabid != '' %}{{ request.vocabid  }}/{% endif %}{{ request.lang }}/{% if request.contentLang != request.lang %}?clang={{ request.contentLang }}{% endif %}">{{ request.vocab.title(request.contentLang) }}</a></h1>
 </div>
 {% endif %}
 <div class="header-float">
-{% if request.page != 'About' and request.page != 'Feedback' %}
+{% if request.page != 'About' and request.page != 'Feedback' and request.page != 'Translate' %}
 
   {% if request.page != '' %}<div class="search-vocab-text"><p>{% trans "Content language" %}</p></div>{% endif %}
   {% if sorted_vocabs is defined %}
@@ -50,4 +50,4 @@
   </form>
 {% endif %}
 </div>
-{% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' %}</div>{% endif %}
+{% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate' %}</div>{% endif %}
