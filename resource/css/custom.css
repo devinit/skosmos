@@ -41,12 +41,13 @@
 }
 
 #lang-dropdown-toggle, .multiselect {
- background-color: #f0826d;
+ background-color: #e84439;
 }
 
 html, body {
- background-color: #d5dbde;
+ background-color: #d9d4da;
  font-family: geomanist !important;
+ color: #443e42 !important
 }
 
 #service-name {
@@ -54,15 +55,15 @@ html, body {
 }
 
 #search-all-button {
- background-color: #f0826d;
+ background-color: #e84439;
 }
 
 .header-left > h1 {
- background-color: #f0826d;
+ background-color: #e84439;
 }
 
 .headerbar-coloured{
- background-color: #f0826d;
+ background-color: #e84439;
 }
 
 body #nav-menu {
@@ -75,7 +76,7 @@ body #nav-menu {
 }
 
 .about-logo {
-  background-color: #f0826d;
+  background-color: #e84439;
   margin-left: -425px;
   padding-left:10px;
   margin-bottom: 10px;
@@ -90,15 +91,15 @@ body #nav-menu {
 }
 
 .dropdown-toggle:hover, .btn.dropdown-toggle:focus, .open > .dropdown-toggle.btn-default {
-  background-color: #f0826d;
+  background-color: #e84439;
 }
 
 li.active label.checkbox{
-  background-color: #f0826d;
+  background-color: #e84439;
 }
 /*
 li.active label.checkbox :hover{
-  background-color: #f0826d;
+  background-color: #e84439;
 }*/
 
 .multiselect-container>li :hover {
@@ -106,7 +107,7 @@ li.active label.checkbox :hover{
 }
 
 .box-new {
-  background-color: #f0826d;
+  background-color: #e84439;
   height: 35px;
   width: 100%;
   color: white;
@@ -207,4 +208,7 @@ input.submit.search-submit{
 .footer p{
   text-align: center;
   padding-top: 1em;
+}
+a {
+    color:#e84439 !important;
 }
