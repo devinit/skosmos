@@ -57,7 +57,7 @@
     void:sparqlEndpoint <http://localhost:3030/supranational/sparql> .
 
 :ken a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Kenya Data Modal "@en ;
+    dc:title "Kenya Data Model "@en ;
     skosmos:shortName "KEN";
     dc:subject :cat_general ;
     void:uriSpace "http://joinedupdata.org/Kenya-Data-Model/";
