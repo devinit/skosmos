@@ -17,7 +17,7 @@ var apisThatArentWorking = {
 function init(){
   console.log("asdasdlaslhdhasd remo init");
   console.log(location.pathname);
-  if (location.pathname.includes("/skosmos/en/translate")) {
+  if (location.pathname.includes("en/translate")) {
     console.log('we are in our simple SPA');
     if(location.hash) getProject(location.hash);
     search();
