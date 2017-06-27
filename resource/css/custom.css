@@ -2,9 +2,9 @@
     font-family: 'geomanist';
     src: url('../fonts/eot/geomanist-regular-webfont.eot');
     src: url('../fonts/eot/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/woff/geomanist-regular-webfont.woff2') format('woff2'),
-         url('../fonts/woff/geomanist-regular-webfont.woff') format('woff'),
-         url('../fonts/ttf/geomanist-regular-webfont.ttf') format('truetype');
+    url('../fonts/woff/geomanist-regular-webfont.woff2') format('woff2'),
+    url('../fonts/woff/geomanist-regular-webfont.woff') format('woff'),
+    url('../fonts/ttf/geomanist-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -14,9 +14,9 @@
     font-family: 'geomanist';
     src: url('../fonts/eot/geomanist-light-webfont.eot');
     src: url('../fonts/eot/geomanist-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/woff/geomanist-light-webfont.woff2') format('woff2'),
-         url('../fonts/woff/geomanist-light-webfont.woff') format('woff'),
-         url('../fonts/ttf/geomanist-light-webfont.ttf') format('truetype');
+    url('../fonts/woff/geomanist-light-webfont.woff2') format('woff2'),
+    url('../fonts/woff/geomanist-light-webfont.woff') format('woff'),
+    url('../fonts/ttf/geomanist-light-webfont.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 
@@ -26,9 +26,9 @@
     font-family: 'geomanist';
     src: url('../fonts/eot/geomanist-bold-webfont.eot');
     src: url('../fonts/eot/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/woff/geomanist-bold-webfont.woff2') format('woff2'),
-         url('../fonts/woff/geomanist-bold-webfont.woff') format('woff'),
-         url('../fonts/ttf/geomanist-bold-webfont.ttf') format('truetype');
+    url('../fonts/woff/geomanist-bold-webfont.woff2') format('woff2'),
+    url('../fonts/woff/geomanist-bold-webfont.woff') format('woff'),
+    url('../fonts/ttf/geomanist-bold-webfont.ttf') format('truetype');
 
     font-weight: bold;
     font-style: normal;
@@ -36,241 +36,266 @@
 }
 
 #service-logo {
-   width: 350px;
-   margin-top: 60px;
+    width: 350px;
+    margin-top: 60px;
 }
 
 #lang-dropdown-toggle, .multiselect {
- background-color: #e84439;
+    background-color: #e84439;
 }
 
 html, body {
- background-color: #d9d4da;
- font-family: geomanist !important;
- color: #443e42 !important
+    background-color: #d9d4da;
+    font-family: geomanist !important;
+    color: #443e42 !important
 }
 
 #service-name {
- color: black;
+    color: black;
 }
 
 #search-all-button {
- background-color: #e84439;
+    background-color: #e84439;
 }
 
 .header-left > h1 {
- background-color: #e84439;
+    background-color: #e84439;
 }
 
-.headerbar-coloured{
- background-color: #e84439;
+.headerbar-coloured {
+    background-color: #e84439;
 }
 
 body #nav-menu {
-  background-color: white ;
-  margin-left: -425px;
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  padding: 15px;
+    background-color: white;
+    margin-left: -425px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    padding: 15px;
 }
 
 .about-logo {
-  background-color: #e84439;
-  margin-left: -425px;
-  padding-left:10px;
-  margin-bottom: 10px;
-  height:50px;
-  vertical-align: middle;
-  color: white;
+    background-color: #e84439;
+    margin-left: -425px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    vertical-align: middle;
+    color: white;
 }
 
 #about {
-  width: 765px !important;
-  padding-top: 2px;
+    width: 765px !important;
+    padding-top: 2px;
 }
 
 .dropdown-toggle:hover, .btn.dropdown-toggle:focus, .open > .dropdown-toggle.btn-default {
-  background-color: #e84439;
+    background-color: #e84439;
 }
 
-li.active label.checkbox{
-  background-color: #e84439;
+li.active label.checkbox {
+    background-color: white;
 }
+
 /*
 li.active label.checkbox :hover{
   background-color: #e84439;
 }*/
 
-.multiselect-container>li :hover {
+.multiselect-container > li :hover {
     background-color: #f8c1b2;
 }
 
 .box-new {
-  background-color: #e84439;
-  height: 35px;
-  width: 100%;
-  color: white;
-  font-size: 20px;
-  text-align: center;
+    background-color: #e84439;
+    height: 35px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
-input.submit.search-submit{
-  background-color: #939393;
-  color: black !important;
+
+input.submit.search-submit {
+    background-color: #939393;
+    color: white !important;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
 .advanced-btn {
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 12px;
-  background: #939393;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    background: #939393;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
 }
 
 .advanced-btn:hover {
-  background: #959595;
-  text-decoration: none;
+    background: #959595;
+    text-decoration: none;
 }
-
 
 /** allan.lukwago@devinit.org custom styles**/
 .banner {
-  width: 100%;
-  height: 5em;
-  background: url("frontendroot?fileName=custom/images/banner.jpg");
-}
-.vignet {
-  width: 100%;
-  height: 5em;
-  position: absolute;
-  top: 0;
-  background-color: rgba( 0,0,0, 0.75 );
-}
-.header-title{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  margin-top: 1em;
-  color: white;
-}
-.header-title h2 {
-  display: inline-block;
-  width: 19%;
-  font-size: 1.5em;
-  padding-left: 2em;
-}
-.header-title h1 {
-  display: inline-block;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-size: 1.5em;
-}
-.sub-heading h2{
-  text-align: center;
-  font-size: 1.6em;
-  padding-top: 1em;
-}
-.footer{
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  clear: both;
-  height: 13.4em;
-}
-.social{
-  width: 100%;
-  background: black;
-  color: #999;
-  height: 4em;
-}
-.social a{
-  /* font-size: 1.4em; */
-  color: white;
-  border: solid;
-  background-color: #00b0ef;
-  border-radius: 50px;
-  border: none;
-  width: 3.2em;
-  height: 3.1em;
-}
-.social a:before {
-  font-size: 1.7em;
-  margin-left: 11px;
-  line-height: 1.8;
-}
-.social a:hover{
-  text-decoration: none;
+    width: 100%;
+    height: 5em;
+    background: url("frontendroot?fileName=custom/images/banner.jpg");
 }
 
-.footer p{
-  text-align: center;
-  padding-top: 1em;
+.vignet {
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
 }
+
+.header-title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 1em;
+    color: white;
+}
+
+.header-title h2 {
+    display: inline-block;
+    width: 19%;
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+
+.header-title h1 {
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.sub-heading h2 {
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 1em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    clear: both;
+    height: 13.4em;
+}
+
+.social {
+    width: 100%;
+    background: black;
+    color: #999;
+    height: 4em;
+}
+
+.social a {
+    /* font-size: 1.4em; */
+    color: white;
+    border: solid;
+    background-color: #00b0ef;
+    border-radius: 50px;
+    border: none;
+    width: 3.2em;
+    height: 3.1em;
+}
+
+.social a:before {
+    font-size: 1.7em;
+    margin-left: 11px;
+    line-height: 1.8;
+}
+
+.social a:hover {
+    text-decoration: none;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 1em;
+}
+
 a {
-    color:#e84439 !important;
+    color: #e84439 !important;
 }
 
 /*
 ----- Accordion ----- Style the buttons that are used to open and close the accordion
  */
 
-SearchAutoCompleteInput{
-   padding: 6px 10px;
- }
+SearchAutoCompleteInput {
+    padding: 6px 10px;
+}
 
 button.accordion {
-  background-color: #eaeaea;
-  color: #4c4c4c;
-  cursor: pointer;
-  padding: 11px 24px;
-  width: 100%;
-  border: solid 1px;
-  text-align: left;
-  outline: none;
-  font-size: 14px;
-  transition: 0.4s;
-  font-weight: 400;
-  border-radius: 6px;
+    background-color: #e84439;
+    color: white;
+    cursor: pointer;
+    padding: 11px 24px;
+    width: 100%;
+    border: solid 1px;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    font-weight: 400;
+    border-radius: 6px;
 }
-button.accordion.active,
+
+button.accordion.active {
+    background-color: #e84439;
+    color: white;
+}
+
 button.accordion:hover {
-  background-color: #BA0C2F;
-  color:white;
+    background-color: #f0826d;
+    color: white;
 }
+
 button.accordion:after {
-  content: '\2228';
-  font-size: 13px;
-  color: #BA0C2F;
-  float: right;
-  margin-left: 5px;
-  font-weight: bold;
+    content: '\2228';
+    font-size: 13px;
+    color: #BA0C2F;
+    float: right;
+    margin-left: 5px;
+    font-weight: bold;
 }
+
 button.accordion.active:after {
-  content: "\2227";
-  color: white;
-  font-weight: bold;
+    content: "\2227";
+    color: white;
+    font-weight: bold;
 }
+
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.6s ease-in-out;
-  opacity: 0;
-  text-align: left;
-  font-size: 13px;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    text-align: left;
+    font-size: 13px;
 }
+
 .panel.show {
-  opacity: 1;
-  max-height: 500px;
+    opacity: 1;
+    max-height: 500px;
 }
+
 .panel.hide {
-  opacity: 0;
-  height: 0;
+    opacity: 0;
+    height: 0;
 }
+
 .header-left > h1 > a {
-  color: #ffffff !important;
+    color: #ffffff !important;
 }

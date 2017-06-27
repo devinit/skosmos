@@ -52,7 +52,6 @@ function getSearchData (){
 function search() {
   searchToggleOptions();
   accordionResults();
-  searchTipsHover();
   sideBarSearch();
   $('.search-submit').click(function(event){
     ajaxLoarder();
@@ -199,28 +198,6 @@ function standardsIndex(container){
 function hashListener (){
   var hash = location.hash;
   getProject(hash);
-}
-
-function searchTipsHover () {
-  var elms = [
-    "#translator .column-left",
-    "#translator .column",
-    "#translator .column-right",
-  ];
-  $(elms.join(','))
-  .hover(function(){
-    $(this).find('.hide-hover').animate({opacity: 1}, 500);
-  }, function(){
-    $(this).find('.hide-hover').animate({opacity: 0}, 250);
-  });
-  // advanced hover
-  ['.advanced-hover-0', '.advanced-hover-1'].forEach(function(element, index){
-    $(element).hover(function(){
-      $('#advanced-tip-' + index).show().animate({opacity: 1}, 500);
-    }, function(){
-      $('#advanced-tip-' + index).hide().animate({opacity: 0}, 250);
-    });
-  });
 }
 
 function searchToggleOptions(){
