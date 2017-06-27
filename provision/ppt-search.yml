@@ -1,0 +1,10 @@
+---
+- name: Update and Upgrade
+  hosts: manu-droplet
+  remote_user: skosmos
+  become: yes
+  
+  roles:
+    - common
+    - update
+    - setup-ppt-search

@@ -1,0 +1,27 @@
+---
+- file: path=/home/skosmos/srv/checkout mode=0755 state=directory
+
+- name: send key to remote deploy user
+  copy: src=ppt-search dest=/home/skosmos/.ssh/priv_key_ppt_search mode=0600
+
+- name: checkout from bitbucket
+  git: repo=git@github.com:devinit/ppt-search.git dest=/home/skosmos/srv/checkout/ppt_search key_file=/home/skosmos/.ssh/priv_key_ppt_search accept_hostkey=true force=yes
+
+- name: install pip requirements
+  pip:
+    requirements: /home/skosmos/srv/checkout/ppt_search/requirements.txt
+    virtualenv: /home/skosmos/srv/checkout/ppt_searchvenv
+
+- apt: name={{ item }} state=present
+  with_items:
+    - supervisor
+
+- template: src=ppt-search.supervisor.conf.j2 dest=/etc/supervisor/conf.d/ppt-search.conf
+
+- name: starting to reread the conf dir
+  service: name=supervisor state=restarted
+
+- supervisorctl: name=ppt-search state=present
+
+- supervisorctl: name=ppt-search state=started
+

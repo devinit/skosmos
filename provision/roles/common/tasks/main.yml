@@ -9,3 +9,9 @@
   - composer
   - libapache2-mod-php7.0
   - ruby
+  - python-pip
+  - python-dev
+
+- pip: name={{ item }}
+  with_items:
+    - virtualenv

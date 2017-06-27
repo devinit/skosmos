@@ -212,3 +212,65 @@ input.submit.search-submit{
 a {
     color:#e84439 !important;
 }
+
+/*
+----- Accordion ----- Style the buttons that are used to open and close the accordion
+ */
+
+SearchAutoCompleteInput{
+   padding: 6px 10px;
+ }
+
+button.accordion {
+  background-color: #eaeaea;
+  color: #4c4c4c;
+  cursor: pointer;
+  padding: 11px 24px;
+  width: 100%;
+  border: solid 1px;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+  font-weight: 400;
+  border-radius: 6px;
+}
+button.accordion.active,
+button.accordion:hover {
+  background-color: #BA0C2F;
+  color:white;
+}
+button.accordion:after {
+  content: '\2228';
+  font-size: 13px;
+  color: #BA0C2F;
+  float: right;
+  margin-left: 5px;
+  font-weight: bold;
+}
+button.accordion.active:after {
+  content: "\2227";
+  color: white;
+  font-weight: bold;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+  text-align: left;
+  font-size: 13px;
+}
+.panel.show {
+  opacity: 1;
+  max-height: 500px;
+}
+.panel.hide {
+  opacity: 0;
+  height: 0;
+}
+.header-left > h1 > a {
+  color: #ffffff !important;
+}

@@ -1,0 +1,14 @@
+[program:ppt-search]
+command = /home/skosmos/srv/checkout/ppt_searchvenv/bin/gunicorn Main:app --workers 4 --bind 0.0.0.0:8000
+process_name = ppt-search
+directory = /home/skosmos/srv/checkout/ppt_search/
+priority = 100
+redirect_stderr = true
+stdout_logfile = /var/log/ppt-search.log
+stopsignal = INT
+autostart=true
+autorestart=true
+numprocs=1
+environment=PATH="/usr/lib/jvm/java-8-openjdk-amd64/bin/"
+environment=C_FORCE_ROOT="true"
+user=root
