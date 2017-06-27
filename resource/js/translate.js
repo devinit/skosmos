@@ -275,7 +275,7 @@ function accordionResults(){
 function httpPost(data, isSimpleSearch){
   $.ajax({
     type: 'POST',
-    url: 'http://joinedupdata.org:8000/translator',
+    url: 'http://178.79.158.119:8000/translator',
     data: data,
     success: function(data){
       $("#loader").hide();
