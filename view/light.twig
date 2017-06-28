@@ -23,11 +23,11 @@
   <div id="skiptocontent">
     <a href="{{ request.langurl }}#maincontent">skip to main content</a>
   </div>
-  {% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate' %}<div class="topbar-white">{% endif %}
-    <div class="topbar{% if request.vocabid != '' or request.vocabid == 'feedback' or request.vocabid == 'about' %} topbar-white{% else %} frontpage{% endif %}">
+  {% if request.vocabid != '' or request.page == '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate' %}<div class="topbar-white">{% endif %}
+    <div class="topbar{% if request.vocabid != '' or request.page == '' or request.vocabid == 'feedback' or request.vocabid == 'about' %} topbar-white{% else %} frontpage{% endif %}">
       {% include 'topbar.twig' %}
     </div>
-  {% if request.vocabid != '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate' %}</div>{% endif %}
+  {% if request.vocabid != ''or request.page == '' or request.page == 'feedback' or request.page == 'about' or request.page == 'translate' %}</div>{% endif %}
   {% block headernav %}
   <div class="headerbar{% if request.vocabid == '' or global_search %} frontpage-spacing{% endif %}">
     {% include 'headerbar.twig' %}
