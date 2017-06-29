@@ -13,14 +13,14 @@
             <h2>Resources</h2>
             <ul>
                 <li>
-                    <a href="en/translate">Search & Translate Tool</a>
+                    <a href="en/translate">Search or translate</a>
                 </li>
             </ul>
         </div>
         <div class="about-content">
             <!-- search  -->
             <div id="search-page">
-                <div class="box-new">Search or translate</div>
+                <div class="box-new">Search or translate</p></div>
                 <div class="panel-tab">
                     <p>
                         Welcome to Joined-up Data Standards search or translate engine. This tool provides advanced
@@ -30,38 +30,37 @@
                         <b>simple search</b>
                         lets users find all concepts that contain a search term or code. The
                         <b>advanced filters</b>
-                        allow for a "translation" between data standards. By using advanced filters, it is possible to
+                        allow for a 'translation' between data standards. By using advanced filters, it is possible to
                         retrieve
                         the exact relationships between data standards and filter a precise result.
                     </p>
-                    <div class="column-left">
-                        <h4 style="color:#933298">You can either search using a term, such as
-                            "agriculture"...</h4>
+                    <div>
+                        <p>You can either search using a term, such as
+                            'agriculture'...</p>
                         <form name="searchTerm">
                             <input name="term" id="term" class="text" placeholder="Search term.." type="text">
                         </form>
                     </div>
-                    <div class="column-right">
-                        <h4 style="color:#933298">...or you can search using a specific code, such as
-                            1.1.1</h4>
+                    <div>
+                        <p>...or you can search using a specific code, such as
+                            1.1.1</p>
                         <form>
                             <input name="code" id="code" class="text" placeholder="or a code.." type="text">
                         </form>
                     </div>
                     <div class="column">
-                        <h4 style="text-align:center">Which project* would you like to search?</h4>
-                        <p style="text-align:center">
+                        <p>Which project would you like to search?</p>
+                        <p>
                             <select name="source" id="source">
                                 <option value="er">All</option>
-                                <option value="Indicators">indicators</option>
-                                <option value="Sectors">sectors</option>
-                                <option value="Surveys">surveys</option>
-                                <option value="geo-pol">supranational regions and groupings</option>
+                                <option value="Indicators">Indicators</option>
+                                <option value="Sectors">Sectors</option>
+                                <option value="Surveys">Surveys</option>
+                                <option value="geo-pol">Supranational regions and groupings</option>
                                 <option value="Kenya">Kenya data model</option>
                             </select>
                         </p>
                         <p>
-                            <b>*</b>
                             Data standards are grouped into projects. Currently we have four projects: "indicators" (the
                             list of
                             corresponding data standards is available
@@ -98,19 +97,18 @@
                     <div class="box-new">Advanced filters</div>
                     <div class="flex-container">
                         <div class="col-flx-1 advanced-hover-0" style="padding-top: 1.5em;">
-                            <h4 style="padding-bottom: 1em;">(1) What translation would you like to be returned?</h4>
+                            <p>(1) What translation would you like to be returned?</p>
                             <select name="match" id="match">
                                 <option value="er">any</option>
                                 <option value="ANY">show me all matches</option>
                                 <option value="SKOS:Exact">exactly the same</option>
                                 <option value="SKOS:Close">very similar</option>
-                                <option value="SKOS:Broader">more general to the search term/ broader</option>
-                                <option value="SKOS:Narrower">more specific to the search term/ narrower</option>
+                                <option value="SKOS:Broader">more general to the search term (broader)</option>
+                                <option value="SKOS:Narrower">more specific to the search term (narrower)</option>
                             </select>
                         </div>
                         <div class="col-flx-2" style="padding-top: 1.5em; padding-left: 2%>">
                             <p id="advanced-tip-0">
-                                <b>1</b>
                                 You can discover different relationships to your search term/code. You can choose to
                                 view
                                 all
@@ -124,9 +122,7 @@
                     </div>
                     <div class="flex-container">
                         <div class="col-flx-1 advanced-hover-1">
-                            <h4 style="padding-bottom: 1em;">(2) Choose
-                                <a href="en/">data standard</a>
-                                you would like to translate from...</h4>
+                            <p>(2) Choose <a href="en/">data standard</a> you would like to translate from.</p>
                             <select name="start" id="start">
                                 <option value="er">Any</option>
                                 <option value="cofog">COFOG</option>
@@ -144,7 +140,6 @@
                         </div>
                         <div class="col-flx-2">
                             <p id="advanced-tip-1" style="padding-left: 2%>">
-                                <b>(2,3)</b>
                                 These options allow you to find direct translations between data standards. You might
                                 want
                                 to
@@ -155,10 +150,7 @@
                     </div>
                     <div class="flex-container">
                         <div class="col-flx-0 advanced-hover-1">
-                            <h4 style="padding-bottom: 1em;">(3)...choose
-                                <a href="en/">data standard</a>
-                                you would like to translate to!</h4>
-                            <h5></h5>
+                            <p>(3) Choose <a href="en/">data standard</a> you would like to translate to!</p>
                             <select name="destination" id="destination">
                                 <option value="er">Any</option>
                                 <option value="cofog">COFOG</option>

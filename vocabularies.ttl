@@ -67,7 +67,7 @@
     void:sparqlEndpoint <http://localhost:3030/kenya/sparql> .
 
 :categories a skos:ConceptScheme;
-	skos:prefLabel "Vocabulary Categories"@en .
+	skos:prefLabel "Vocabulary categories"@en .
 
 :cat_general a skos:Concept ;
 	skos:topConceptOf :categories ;

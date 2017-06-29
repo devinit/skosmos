@@ -55,15 +55,15 @@ html, body {
 }
 
 #search-all-button {
-    background-color: #e84439;
+    background-color: #e84439 !important;
 }
 
 .header-left > h1 {
-    background-color: #e84439;
+    background-color: #e84439 !important;
 }
 
 .headerbar-coloured {
-    background-color: #e84439;
+    background-color: #e84439 !important;
 }
 
 body #nav-menu {
@@ -114,6 +114,9 @@ li.active label.checkbox :hover{
     color: white;
     font-size: 20px;
     text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 3px;
 }
 
 input.submit.search-submit {
@@ -263,7 +266,7 @@ button.accordion:hover {
 button.accordion:after {
     content: '\2228';
     font-size: 13px;
-    color: #BA0C2F;
+    color:white;
     float: right;
     margin-left: 5px;
     font-weight: bold;
