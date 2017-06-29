@@ -6,24 +6,36 @@
     {% if category_label %}
     <h2>{{ category_label }}</h2>
     {% endif %}
-
-    <p>
-    
-    In semantic terms vocabularies define concepts that are grouped together based on the areas of interest, and the relationships between them. Here, each vocabulary represents a group of data standards or classifications that can fall under the categories such as supranational regions and groupings or socio-economic sectors. The following gives a brief description of each vocabulary:
-  
-Sectors (please add hyperlink to the right concept scheme)
-Links international data standards used as classifications for socio-economic activities. The project offers a machine-readable cross-walk (mapping) between major standards developed by the United Nations, World Bank and the Organisation for Economic Co-operation and Development (OECD).
- 
-Indicators (please add hyperlink to the right concept scheme)
-Hosts international monitoring data standards (indicators) such as the Sustainable Developmental Goals, Millennium Developmental Goals or World Development Indicators. The indicators are mapped in a machine- and human-readable format  both to each other and across other projects maintained on this thesaurus such as sectors, supranational regions and groupings and household surveys. The cross-mapping of standards is an ongoing process and the list of the data standards in this project will increase as our work progresses.
- 
-Surveys (please add hyperlink to the right concept scheme)
-Provides a machine-readable cross-walk between international household surveys standard questionnaires. Currently this project provides the mapping of the DHS Program Demographic and Health Surveys (DHS) to UNICEF Multiple Indicator Cluster Surveys (MICS). These surveys will be soon cross-mapped to the other projects in this thesaurus, such as supranational regions and groupings, denoting where the surveys took place, indicators, mapping the international indicators to the source question, and finally sectors, to show the alignment between national and international socio-economic sectors.
- 
-Supranational regions and groupings (please add hyperlink to the right concept scheme)
-Contains machine- and human-readable mappings of international classifications of countries with respect to economic, geographic, health or security groupings. The classifications include those by the United Nations, the Organisation for Economic Co-operation and Development (OECD), World Bank, World Health Organisation, and International Monetary Fund amongst others. This project is cross-linked to other data standards hosted on this thesaurus
-    
-    </p>
+    <div id="introduce-text">
+        <p> In semantic terms vocabularies define concepts that are grouped together based on the areas of interest, and the relationships between them. 
+        Here, each vocabulary represents a group of data standards or classifications that can fall under the categories such as supranational regions and
+        groupings or socio-economic sectors. The following gives a brief description of each vocabulary:
+        </p>
+      
+        <p><a href="sec/en/">Sectors</a><br>
+        Links international data standards used as classifications for socio-economic activities. 
+        The project offers a machine-readable cross-walk (mapping) between major standards developed 
+        by the United Nations, World Bank and the Organisation for Economic Co-operation and Development (OECD).</p>
+     
+        <p><a href="ind/en/">Indicators</a><br>
+        Hosts international monitoring data standards (indicators) such as the Sustainable Developmental Goals, 
+        Millennium Developmental Goals or World Development Indicators. The indicators are mapped in a machine- and 
+        human-readable format  both to each other and across other projects maintained on this thesaurus such as 
+        sectors, supranational regions and groupings and household surveys. The cross-mapping of standards is an ongoing
+        process and the list of the data standards in this project will increase as our work progresses.</p>
+        <p><a href="sur/en/">Surveys</a><br>
+        Provides a machine-readable cross-walk between international household surveys standard questionnaires. 
+        Currently this project provides the mapping of the DHS Program Demographic and Health Surveys (DHS) to UNICEF Multiple 
+        Indicator Cluster Surveys (MICS). These surveys will be soon cross-mapped to the other projects in this thesaurus, 
+        such as supranational regions and groupings, denoting where the surveys took place, indicators, mapping the international 
+        indicators to the source question, and finally sectors, to show the alignment between national and international socio-economic sectors.</p>
+        <p><a href="sup/en/">Supranational regions and groupings</a><br>
+        Contains machine- and human-readable mappings of international classifications of countries with respect to economic,
+        geographic, health or security groupings. The classifications include those by the United Nations, the Organisation for 
+        Economic Co-operation and Development (OECD), World Bank, World Health Organisation, and International Monetary Fund amongst others.
+        This project is cross-linked to other data standards hosted on this thesaurus</p>
+        <br>
+    </div>
   </div>
   <div class="vocabularies">
     {% for vocabClassName,vocabArray in request.vocabList %}

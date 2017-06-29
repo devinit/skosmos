@@ -302,3 +302,7 @@ button.accordion.active:after {
 .header-left > h1 > a {
     color: #ffffff !important;
 }
+
+#introduce-text {
+    padding-left: 20px;
+}
