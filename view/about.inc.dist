@@ -14,24 +14,19 @@
 <h3>About the JUDS Thesaurus</h3>
 <p>This thesaurus is a free repository of data standards that have been mapped
 by the<a href="http://juds.joinedupdata.org/">Joined-up Data Standards (JUDS) project</a>.</p>
-<br />
 <p>The project aims to generate the political will and to find technical
 solutions to join up data standards, so that data can be turned into useable
 information for a better understanding of development challenges and how to
 design, implement and monitor more effective policies to address them.
 </p>
-<br />
-
 <p>Initially we mapped these standards to drive the<a href="http://juds.joinedupdata.org/discussion-papers/">JUDS discussion papers</a>,
 each of which focuses on an area where there are multiple standards that are
 used for an identical or similar purpose. We’ve used the thesaurus to cross-map
 the standards and use its linked data outputs to build visualisations that
 highlight issues. </p>
-<br />
 <p>The thesaurus now features a handy search or translate tool, so you can query
 the mappings of the data standards held here to understand the relationships between them.
 </p>
-<br />
 <p>
 This thesaurus is continually expanding. We will add any new standards to the 
 list of data standards when they become available.

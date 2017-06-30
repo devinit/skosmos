@@ -26,8 +26,8 @@ $parts = explode('/', $path);
 if (sizeof($parts) <= 2) {
     // if language code missing, redirect to guessed language
     // in any case, redirect to <lang>/
-    $lang = sizeof($parts) == 2 && $parts[1] !== '' ? $parts[1] : $controller->guessLanguage();
-    header("Location: " . $lang . "/");
+    // $lang = sizeof($parts) == 2 && $parts[1] !== '' ? $parts[1] : $controller->guessLanguage();
+    header("Location: en/about/");
 } else {
   if (array_key_exists($parts[1], $config->getLanguages())) { // global pages
         $request->setLang($parts[1]);
