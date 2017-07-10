@@ -53,7 +53,7 @@
     void:uriSpace "http://joinedupdata.org/Supranational/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
-    skosmos:mainConceptScheme <http://joinedupdata.org/geo-pol>;
+    skosmos:mainConceptScheme <http://joinedupdata.org/Supranational>;
     void:sparqlEndpoint <http://localhost:3030/Supranational/sparql> .
 
 :ken a skosmos:Vocabulary, void:Dataset ;
