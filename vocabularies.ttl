@@ -39,7 +39,7 @@
     dc:title "Sectors "@en ;
     skosmos:shortName "SEC";
     dc:subject :cat_general ;
-    void:uriSpace "http://joinedupdata.org/sectors/";
+    void:uriSpace "http://joinedupdata.org/Sectors/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     skosmos:mainConceptScheme <http://joinedupdata.org/Sectors>;
@@ -50,21 +50,21 @@
     dc:title "Supranational regions and groupings "@en ;
     skosmos:shortName "SUP";
     dc:subject :cat_general ;
-    void:uriSpace "http://joinedupdata.org/supranational";
+    void:uriSpace "http://joinedupdata.org/Supranational/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     skosmos:mainConceptScheme <http://joinedupdata.org/geo-pol>;
-    void:sparqlEndpoint <http://localhost:3030/supranational/sparql> .
+    void:sparqlEndpoint <http://localhost:3030/Supranational/sparql> .
 
 :ken a skosmos:Vocabulary, void:Dataset ;
     dc:title "Kenya Data Model "@en ;
     skosmos:shortName "KEN";
     dc:subject :cat_general ;
-    void:uriSpace "http://joinedupdata.org/Kenya-Data-Model/";
+    void:uriSpace "http://joinedupdata.org/Kenya/";
     skosmos:language "en";
     skosmos:defaultLanguage "en";
     skosmos:mainConceptScheme <http://joinedupdata.org/Kenya>;
-    void:sparqlEndpoint <http://localhost:3030/kenya/sparql> .
+    void:sparqlEndpoint <http://localhost:3030/Kenya/sparql> .
 
 :categories a skos:ConceptScheme;
 	skos:prefLabel "Vocabulary categories"@en .
