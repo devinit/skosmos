@@ -13,8 +13,12 @@
 
 - name: enabled mod_rewrite
   apache2_module:
-    name: rewrite
+    name: "{{ item }}"
     state: present
+  with_items:
+  - rewrite
+  - proxy
+  - proxy_http
 
 - name: copy apache sites-available default conf
   template:

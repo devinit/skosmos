@@ -5,20 +5,11 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^entity$ entity.php [L]
 
-RewriteEngine On
-RewriteRule ^/Indicators/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/Indicators/$0 [P]
-
-RewriteEngine On
-RewriteRule ^/Surveys/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/Surveys/$0 [P]
-
-RewriteEngine On
-RewriteRule ^/Sectors/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/Sectors/$0 [P]
-
-RewriteEngine On
-RewriteRule ^/Kenya/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/Kenya/$0 [P]
-
-RewriteEngine On
-RewriteRule ^/Supranational/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/Supranational/$0 [P]
+RewriteRule ^Indicators/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/$0 [P]
+RewriteRule ^Surveys/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/$0 [P]
+RewriteRule ^Sectors/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/$0 [P]
+RewriteRule ^Kenya/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/$0 [P]
+RewriteRule ^Supranational/(.*) http://joinedupdata.org/entity?uri=http://joinedupdata.org/$0 [P]
 
 RewriteRule ^rest/v1/swagger.json$ swagger.json [L]
 
