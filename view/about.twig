@@ -2,26 +2,34 @@
 {% block sidebar %}{% endblock %}
 {% block headernav %}{% endblock %}
 {% block content %}
-<div class="about-logo">
-  <h1>Thesaurus</h1>
-</div>
+    <div class="about-logo">
+        <h3 style="padding-top: 10px">Navigator</h3>
+    </div>
 
 
-<div id="about">
-  <div id="nav-menu">
-  <h2>Thesaurus</h2>
-    <ul>
-      <li><a href="en/">Browse</a></li>
-      <li><a href="http://178.79.158.119:3030/manage.html" target="_blank">Download</a></li>
-      <li><a href="http://178.79.158.119:3030/dataset.html" target="_blank">SPARQL endpoint</a></li>
-    </ul>
-  <h2>Resources</h2>
-    <ul>
-      <li><a href="en/translate/">Search or translate</a></li>
-    </ul>
-  </div>
-  <div class="about-content">
-    {% include ['about.inc', 'about.inc.dist']  %}
-  </div>
-</div>
+    <div id="about">
+        <div id="nav-menu">
+            <p>Navigator</p>
+            <ul>
+                <li><a href="en/">Browse Projects</a></li>
+                <li><a href="en/faq">FAQs</a></li>
+            </ul>
+            <p>Tools</p>
+            <ul>
+                <li><a href="en/translate/">Search or translate tool</a></li>
+                <li><a href="en/spreadsheet/">Spreadsheet tool</a></li>
+            </ul>
+            <p>Developer Access</p>
+            <ul>
+                <li><a href="http://178.79.158.119:3030/dataset.html" target="_blank">SPARQL endpoint</a></li>
+            </ul>
+            <p>Contact</p>
+            <ul>
+                <li><a href="mailto:info@joinedupdata.org?Subject=Joined%20Data%20Inquiry" target="_top">Email Us</a></li>
+            </ul>
+        </div>
+        <div class="about-content">
+            {% include ['about.inc', 'about.inc.dist'] %}
+        </div>
+    </div>
 {% endblock %}

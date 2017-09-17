@@ -297,4 +297,16 @@ function prepareList(currentProject) {
 $(document).ready(function(){
   init();
   console.log("asldkhaslkhdlkaslkhdas dsalkhdklsahdlksad ");
+  $('#home-page-accordion-1').on('click', function(){
+      $(this).toggleClass('active');
+      $(this).parent().children('div').toggleClass('show');
+  });
+  $('#home-page-accordion-2').on('click', function(){
+      $(this).toggleClass('active');
+      $(this).parent().children('div').toggleClass('show');
+  });
+  $('#home-page-accordion-3').on('click', function(){
+      $(this).toggleClass('active');
+      $(this).parent().children('div').toggleClass('show');
+  });
 });

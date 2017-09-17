@@ -33,7 +33,7 @@ if (sizeof($parts) <= 2) {
         $request->setLang($parts[1]);
         $content_lang = $request->getQueryParam('clang');
         $request->setContentLang($content_lang);
-        ($parts[2] == 'about' || $parts[2] == 'feedback' || $parts[2] == 'search' || $parts[2] == 'translate') ? $request->setPage($parts[2]) : $request->setPage('');
+        ($parts[2] == 'about' || $parts[2] == 'feedback' || $parts[2] == 'search' || $parts[2] == 'translate' || $parts[2] == 'faq' || $parts[2] == 'spreadsheet') ? $request->setPage($parts[2]) : $request->setPage('');
         if ($request->getPage() == '') {
             $controller->invokeVocabularies($request);
         } elseif ($request->getPage() == 'about') {
@@ -44,6 +44,10 @@ if (sizeof($parts) <= 2) {
             $controller->invokeGlobalSearch($request);
         } elseif ($request->getPage() == 'translate') {
               $controller->invokeTranslatePage($request);
+        } elseif ($request->getPage() == 'faq') {
+                  $controller->invokeFAQPage($request);
+        } elseif ($request->getPage() == 'spreadsheet') {
+                  $controller->invokeSpreadsheetPage($request);
         } else {
             $controller->invokeGenericErrorPage($request);
         }

@@ -20,20 +20,33 @@
         <div class="about-content">
             <!-- search  -->
             <div id="search-page">
-                <div class="box-new">Search or translate</p></div>
+                <div class="box-new">Joined-up Data Standards Navigator search and translate tool</div>
                 <div class="panel-tab">
+                    <br>
                     <p>
-                        Welcome to Joined-up Data Standards search or translate engine. This tool provides advanced
-                        options
-                        for
-                        searching relationships between data standards. The
-                        <b>simple search</b>
-                        lets users find all concepts that contain a search term or code. The
-                        <b>advanced filters</b>
-                        allow for a 'translation' between data standards. By using advanced filters, it is possible to
-                        retrieve
-                        the exact relationships between data standards and filter a precise result.
+                        The JUDS Navigator search and translate tool is an easy-to-use tool that helps data users to
+                        understand the relationships between different data standards.
                     </p>
+                    <p>
+                        The simple search allows you to find any instances of your search term or code (e.g. search
+                        ‘agriculture’ or ‘education’). By adding the advanced filters, you can then make a translation
+                        between specific data standards (e.g. find out how COFOG education fields map to CRS).
+                    </p>
+
+                    <p>Use the tool below or download our <a href="#">FAQS</a> for more information.</p>
+                    <br>
+                    <div class="box-new">Simple Search</div>
+                    <br>
+                    <p>The standards we’ve mapped are grouped into projects. You can search them individually, or search
+                        the whole network. The project groupings are:
+                    </p>
+                    <ul>
+                        <li><a href="#">Indicators</a></li>
+                        <li><a href="#">Sectors</a></li>
+                        <li><a href="#">Supranational regions and groupings</a></li>
+                        <li><a href="#">Surveys</a></li>
+                        <li><a href="#">Kenya data model</a></li>
+                    </ul>
                     <div>
                         <p>You can either search using a term, such as
                             'agriculture'...</p>
@@ -60,66 +73,14 @@
                                 <option value="Kenya">Kenya data model</option>
                             </select>
                         </p>
-                        <p>
-                            Data standards are grouped into projects. Currently we have four projects: "indicators" (the
-                            list of
-                            corresponding data standards is available
-                            <b>
-                                <a href="ind/en/">here</a>
-                            </b>), "sectors" (the list of corresponding data standards is available
-                            <b>
-                                <a href="sec/en/">here</a>
-                            </b>), "supranational regions and groupings" (the list of corresponding data standards is
-                            available
-                            <b>
-                                <a href="sup/en/">here</a>
-                            </b>), and "surveys" (the list of corresponding data standards is available
-                            <b>
-                                <a href="sur/en/">here</a>
-                            </b>), and "kenya data model" (the list of corresponding data standards is available
-                            <b>
-                                <a href="ken/en/">here</a>
-                            </b>).
-                        </p>
-                        <p style="text-align: justify;padding-bottom: 0em;">
-                            Simple search lets user find all concepts that contain a search term or code. For example,
-                            if
-                            you
-                            search for a term “agriculture”, a list of concepts containing the word “agriculture” will
-                            be
-                            returned. The simple search can be carried out either
-                            within a specific project (such as “Sectors”) or across all projects.
-                        </p>
                     </div>
                     <center class="simple-center"><input value="Simple search" style="color:#FFFFFF" type="submit"
                                                          class="submit search-submit advanced-btn"></center>
                     <br>
                     <div class="box-new">Advanced filters</div>
-                    <div class="flex-container">
-                        <div class="col-flx-1 advanced-hover-0" style="padding-top: 1.5em;">
-                            <p>(1) What translation would you like to be returned?</p>
-                            <select name="match" id="match">
-                                <option value="er">any</option>
-                                <option value="ANY">show me all matches</option>
-                                <option value="SKOS:Exact">exactly the same</option>
-                                <option value="SKOS:Close">very similar</option>
-                                <option value="SKOS:Broader">more general to the search term (broader)</option>
-                                <option value="SKOS:Narrower">more specific to the search term (narrower)</option>
-                            </select>
-                        </div>
-                        <div class="col-flx-2" style="padding-top: 1.5em; padding-left: 2%>">
-                            <p id="advanced-tip-0">
-                                You can discover different relationships to your search term/code. You can choose to
-                                view
-                                all
-                                the relationships to your search term/code or a specific one. We use
-                                <a href="https://www.w3.org/2004/02/skos/intro">Simple Knowledge Organisation System
-                                </a>
-                                (SKOS) to map data standards
-                                </b>.
-                            </p>
-                        </div>
-                    </div>
+                    <br>
+                    <p>Add advanced filters to your search to drill down into the relationships between specific
+                        elements.</p>
                     <div class="flex-container">
                         <div class="col-flx-1 advanced-hover-1">
                             <p>(2) Choose <a href="en/">data standard</a> you would like to translate from.</p>
@@ -137,15 +98,6 @@
                                 <option value="dhsq7">DHS-VII</option>
                                 <option value="mics5">MICS5</option>
                             </select>
-                        </div>
-                        <div class="col-flx-2">
-                            <p id="advanced-tip-1" style="padding-left: 2%>">
-                                These options allow you to find direct translations between data standards. You might
-                                want
-                                to
-                                search for a given code and ask to see its translation in a data standard of your
-                                interest.
-                            </p>
                         </div>
                     </div>
                     <div class="flex-container">
@@ -168,12 +120,31 @@
                         </div>
                     </div>
                     <div class="flex-container">
+                        <div class="col-flx-1 advanced-hover-0" style="padding-top: 1.5em;">
+                            <p>(1) What translation would you like to be returned?</p>
+                            <select name="match" id="match">
+                                <option value="er">any</option>
+                                <option value="ANY">show me all matches</option>
+                                <option value="SKOS:Exact">exactly the same</option>
+                                <option value="SKOS:Close">very similar</option>
+                                <option value="SKOS:Broader">more general to the search term (broader)</option>
+                                <option value="SKOS:Narrower">more specific to the search term (narrower)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-container">
                         <div class="col-flx-0">
                             <center><input value="Advanced search" style="color:#FFFFFF" type="submit"
                                            class="submit search-submit advanced-btn"></center>
                             <br>
                         </div>
                     </div>
+
+                    <p>
+                        You can also make translations like this from within your own <a href="#">spreadsheet</a> using our Google Sheet
+                        Add-on
+
+                    </p>
                 </div>
             </div>
 

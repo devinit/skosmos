@@ -1,0 +1,78 @@
+{% extends "light.twig" %}
+{% block sidebar %}{% endblock %}
+{% block headernav %}{% endblock %}
+{% block content %}
+    <div id="about">
+        <div id="nav-menu">
+            <p>Navigator</p>
+            <ul>
+                <li><a href="en/">Browse Projects</a></li>
+                <li><a href="en/faqs">FAQs</a></li>
+            </ul>
+            <p>Tools</p>
+            <ul>
+                <li><a href="en/translate/">Search or translate tool</a></li>
+                <li><a href="en/spreadsheet/">Spreadsheet tool</a></li>
+            </ul>
+            <p>Developer Access</p>
+            <ul>
+                <li><a href="http://178.79.158.119:3030/dataset.html" target="_blank">SPARQL endpoint</a></li>
+            </ul>
+            <p>Contact</p>
+            <ul>
+                <li><a href="mailto:info@joinedupdata.org?Subject=Joined%20Data%20Inquiry" target="_top">Email Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="about-content">
+            <!-- search  -->
+            <div id="search-page">
+                <div class="box-new">Joined-up Data Standards Navigator spreadsheet tool</div>
+                <div class="panel-tab">
+                    <p>Our Google Sheet Add-on allows you to translate elements of data standards directly within your
+                        spreadsheet, to save time working out which fields in one data standard can be matched to those
+                        in
+                        another.
+                    </p>
+
+                    <p>
+                        For example, you can use the spreadsheet tool to query whether the ‘health’ sector code in the
+                        OECD
+                        DAC’s Creditor Reporting system directly compares to the same field in COFOG, or to learn which
+                        World Bank sector codes are relevant when monitoring a particular SDG indicator.
+                    </p>
+
+                    <p>
+                        Currently the tool is available as a Google Sheet Add-on. It can be used directly in a Google
+                        Sheet
+                        and results can be downloaded in Microsoft Excel format. A Microsoft Excel macro will be
+                        available
+                        in the future.
+                    </p>
+                    <p>How to get the tool:
+                    <p>
+                    <ul>
+                        <li>From your active Google Sheet, select “Get add-ons” from the top “Add-ons” menu.</li>
+                        <li>Search for "Joined-up Data Standard Navigator spreadsheet tool"</li>
+                    </ul>
+                    <p>Once downloaded, the tool offers two functions:</p>
+                    <ul>
+                        <li>translateSectorCode()</li>
+                        <li>translateGeoCode()</li>
+
+                    </ul>
+
+                    <p>
+                        To learn more about how to use this tool, please go to our <a href="#">FAQs</a>.
+                    </p>
+
+                    <p>
+                        This version is in beta. If you would like to be notified when we release a new version please
+                        fill
+                        out your details here
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -364,6 +364,44 @@ class WebController extends Controller
     }
 
     /**
+     * Invokes the Search page for the Skosmos service.
+     */
+    public function invokeFAQPage($request)
+    {
+        $template = $this->twig->loadTemplate('faq.twig');
+        $this->setLanguageProperties($request->getLang());
+        $url = $request->getServerConstant('HTTP_HOST');
+        $version = $this->model->getVersion();
+
+        echo $template->render(
+            array(
+                'languages' => $this->languages,
+                'version' => $version,
+                'server_instance' => $url,
+                'request' => $request,
+            ));
+    }
+
+    /**
+     * Invokes the Search page for the Skosmos service.
+     */
+    public function invokeSpreadsheetPage($request)
+    {
+        $template = $this->twig->loadTemplate('spreadsheet.twig');
+        $this->setLanguageProperties($request->getLang());
+        $url = $request->getServerConstant('HTTP_HOST');
+        $version = $this->model->getVersion();
+
+        echo $template->render(
+            array(
+                'languages' => $this->languages,
+                'version' => $version,
+                'server_instance' => $url,
+                'request' => $request,
+            ));
+    }
+
+    /**
      * Invokes the search for concepts in all the availible ontologies.
      */
     public function invokeGlobalSearch($request)
