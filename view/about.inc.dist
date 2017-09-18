@@ -53,17 +53,16 @@
               </p>
               <ul>
                 <li><a href="https://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4">UN Classifications of the Functions of Government (COFOG)</a></li>
-                <li><a href="#">Organisation for Economic Cooperation and Development Creditor Reporting System (CRS)</a></li>
-                <li><a href="#">National Center for Charitable Statistics National Taxonomy of Exempt Entities (NTEE)</a></li>
-                <li><a href="#">UN International Standard Industrial Classifcation of All Economic Activities (ISIC)</a></li>
-                <li><a href="#">World Bank Themes</a></li>
-                <li><a href="#">World Bank Sectors</a></li>
-                <li><a href="#">Millennium Development Goals (MDGs)</a></li>
-                <li><a href="#">Sustainable Development Goals (SDGs)</a></li>
-                <li><a href="#">World Bank World Development Indicators (WDI)</a></li>
-                <li><a href="#">Demographic and Health Surveys (DHS) V11</a></li>
-                <li><a href="#">UNICEF Multiple Indicator Cluster Survey (MICS5)</a></li>
-                <li><a href="#">World Bank World Development Indicators (WDI)</a></li>
+                <li><a href="http://www.oecd-ilibrary.org/development/data/creditor-reporting-system_dev-cred-data-en">Organisation for Economic Cooperation and Development Creditor Reporting System (CRS)</a></li>
+                <li><a href="http://nccs.urban.org/classification/national-taxonomy-exempt-entities">National Center for Charitable Statistics National Taxonomy of Exempt Entities (NTEE)</a></li>
+                <li><a href="https://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=27">UN International Standard Industrial Classifcation of All Economic Activities (ISIC)</a></li>
+                <li><a href="http://projects.worldbank.org/theme?lang=en">World Bank Themes</a></li>
+                <li><a href="http://projects.worldbank.org/sector?lang">World Bank Sectors</a></li>
+                <li><a href="https://mdgs.un.org/unsd/mdg/default.aspx">Millennium Development Goals (MDGs)</a></li>
+                <li><a href="https://unstats.un.org/sdgs/">Sustainable Development Goals (SDGs)</a></li>
+                <li><a href="http://data.worldbank.org/data-catalog/world-development-indicators">World Bank World Development Indicators (WDI)</a></li>
+                <li><a href="http://dhsprogram.com/What-We-Do/Survey-Types/DHS.cfm">Demographic and Health Surveys (DHS) V11</a></li>
+                <li><a href="http://mics.unicef.org/">UNICEF Multiple Indicator Cluster Survey (MICS5)</a></li>
               </ul>
               <p>
                 You can use our <a href="en/translate">search and translate tool</a>
