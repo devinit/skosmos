@@ -30,10 +30,15 @@
           <div class="panel" style="text-align:left; overflow: auto">
             <p>
               As people who work with data on international development and humanitarian financing, we know how complex and time-consuming it can be to compare and work with data published to different standards.
+            </p>
+            <p>
               To solve this problem we’ve created easy-to-use tools so you can explore if and how international development data standards compare, and what relationships exist between them. You can also download our macro to apply our mappings within your own spreadsheets.
-              Search and translate: find out if and how data standards compare
-              Translate in your spreadsheet: use our Google Sheet Add-on to use our mappings within your own spreadsheet
-              Visit our FAQS to learn more
+            </p>
+            <ul>
+                <li><a href="en/translate">Search and translate: </a>find out if and how data standards compare</li>
+                <li><a href="en/spreadsheet">Translate in your spreadsheet: </a>use our Google Sheet Add-on to use our mappings within your own spreadsheet</li>
+                <li>Visit our <a href="#">FAQS</a> FAQS to learn more</li>
+            </ul>
             </p>
           </div>
         </div>
@@ -45,18 +50,24 @@
           <div class="panel" style="text-align:left; overflow: auto">
               <p>
                 Our Navigator currently includes:
-                UN Classifications of the Functions of Government (COFOG)
-                Organisation for Economic Cooperation and Development Creditor Reporting System (CRS)
-                National Center for Charitable Statistics National Taxonomy of Exempt Entities (NTEE)
-                UN International Standard Industrial Classifcation of All Economic Activities (ISIC)
-                World Bank Themes
-                World Bank Sectors
-                Millennium Development Goals (MDGs)
-                Sustainable Development Goals (SDGs)
-                World Bank World Development Indicators (WDI)
-                Demographic and Health Surveys (DHS) V11
-                UNICEF Multiple Indicator Cluster Survey (MICS5)
-                You can use our search and translate tool  and spreadsheet tool to understand the relationships between these standards.
+              </p>
+              <ul>
+                <li><a href="https://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4">UN Classifications of the Functions of Government (COFOG)</a></li>
+                <li><a href="#">Organisation for Economic Cooperation and Development Creditor Reporting System (CRS)</a></li>
+                <li><a href="#">National Center for Charitable Statistics National Taxonomy of Exempt Entities (NTEE)</a></li>
+                <li><a href="#">UN International Standard Industrial Classifcation of All Economic Activities (ISIC)</a></li>
+                <li><a href="#">World Bank Themes</a></li>
+                <li><a href="#">World Bank Sectors</a></li>
+                <li><a href="#">Millennium Development Goals (MDGs)</a></li>
+                <li><a href="#">Sustainable Development Goals (SDGs)</a></li>
+                <li><a href="#">World Bank World Development Indicators (WDI)</a></li>
+                <li><a href="#">Demographic and Health Surveys (DHS) V11</a></li>
+                <li><a href="#">UNICEF Multiple Indicator Cluster Survey (MICS5)</a></li>
+                <li><a href="#">World Bank World Development Indicators (WDI)</a></li>
+              </ul>
+              <p>
+                You can use our <a href="en/translate">search and translate tool</a>
+                and <a href="en/spreadsheet">spreadsheet tool</a> to understand the relationships between these standards.
               </p>
           </div>
         </div>
@@ -67,13 +78,18 @@
           </button>
           <div class="panel" style="text-align:left; overflow: auto">
               <p>
-                For the data you publish to have maximum reach and impact it needs to be easily accessible and useable by those wanting to analyse it. By adding your standard to our network, you will:
-                make it easier for data users to put your data to good use
-                show how your standard relates to others
-                support interoperability across different organisations and sectors.
+                For the data you publish to have maximum reach and impact it needs to be easily accessible
+                and useable by those wanting to analyse it. By adding your standard to our network, you will:
+              </p>
+              <ol>
+                <li>make it easier for data users to put your data to good use</li>
+                <li>show how your standard relates to others</li>
+                <li>support interoperability across different organisations and sectors.</li>
+              </ol>
+              <p>
                 It’s easy to add your standard and you only have to do it once to plug in to the network we’ve already mapped.
-                The more standards that join, the more useful the tools become to those needing to analyse data, and the more impact your data can have. So get in touch to find out more about how to add your standard to the Joined-up Data Standards Navigator.
-
+                The more standards that join, the more useful the tools become to those needing to analyse data, and the more impact your data can have.
+                So <a href="mailto:info@joinedupdata.org?Subject=Joined%20Data%20Inquiry" target="_top">get in touch</a> to find out more about how to add your standard to the Joined-up Data Standards Navigator.
               </p>
           </div>
         </div>
