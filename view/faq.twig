@@ -7,7 +7,7 @@
             <p>Navigator</p>
             <ul>
                 <li><a href="en/">Browse Projects</a></li>
-                {#<li><a href="en/faq">FAQs</a></li>#}
+                <li><a href="en/faq">FAQs</a></li>
             </ul>
             <p>Tools</p>
             <ul>
@@ -124,7 +124,244 @@
                         results will include:
                     </p>
 
-                    <img src="resource/images/image1.png" alt="adasda">
+                    <img src="resource/images/image1.png" alt="adasda" class="image-sizing">
+
+                    <p>From there you can click an individual ‘concept’ or occurrence from within the search results:
+                    </p>
+
+                    <img src="resource/images/image3.png" alt="adasda" class="image-sizing">
+
+                    <p>And explore how it relates to fields in other standards:</p>
+
+                    <img src="resource/images/image2.png" alt="adasda" class="image-sizing">
+
+                    <p>Simple search allows you to either search a specific project or browse for a specific term or
+                        code across projects.
+                    </p>
+
+                    <p class="heading">Advanced Search</p>
+
+                    <p>
+                        The advanced search filters enable you to be more specific about the results you will be shown,
+                        allowing you to select which data standards you would like to translate from and to.
+                    </p>
+                    <p>
+                        For the advanced search to return valid results you must select:
+                    </p>
+                    <ol>
+                        <li>a specific project to be searched,</li>
+                        <li>the translation that you would like to be returned, such as exact or close relationship
+                            between
+                            standards
+                        </li>
+                        <li>which data standards you would like to translate from</li>
+                        <li>which data standard you would like to translate to.</li>
+                    </ol>
+                    <p>
+                        Example: to find if there are any exact matches to the SDG indicator 1.1.1 (“Proportion of
+                        population below the international poverty line”) in the MDG framework, the search parameters
+                        would be:
+                    </p>
+
+                    <img src="resource/images/image4.png" alt="adasda" class="image-sizing">
+
+                    <br>
+                    <img src="resource/images/image6.png" alt="adasda" class="image-sizing">
+
+                    <p>The Navigator’s output to this query is:</p>
+
+                    <img src="resource/images/image5.png" alt="adasda" style="width: 480px">
+
+                    <p>This in turn informs me that the exactly the same indicator was also part of the MDGs identified
+                        by an indicator code 1.1. Clicking on the hyperlink will redirect you to indicator’s page where
+                        more information on it can be found.</p>
+
+                    <p class="heading">
+                        9. What do you mean by ‘broader concept’ and ‘narrower concept’?
+                    </p>
+
+                    <p>
+                        When looking at a ‘concept’ within the network (for example an SDG target or a sector code), you
+                        will be shown what concepts/fields within that standard are broader or narrower than the one
+                        that you have selected.
+
+                    </p>
+
+                    <img src="resource/images/image7.png" alt="adasda" class="image-sizing">
+
+                    <p>A broader concept is one that has a more general meaning than the concept that you have
+                        selected, and could simply be understood as an umbrella term, or the parent category. Most data
+                        standards are already grouped using this type of logic.
+
+                    </p>
+                    <p>In the ‘basic health’ example above, the CRS sector code ‘Health’ is a broader match to ‘Basic
+                        health’ as it sits above basic health in the hierarchy – it is more general, a broader term. .
+                    </p>
+                    <p>A narrower concept is one that is more specific than the one you have selected, so could be
+                        understood as being the child term. In the example above, ‘basic health infrastructure’ is a
+                        code that is narrower than ‘basic health’ – it is a more specific but sits within the ‘basic
+                        health’ family and under the umbrella of a health sector.
+                    </p>
+                    <p>Broader and narrower concepts are used to link elements within a given data standard, such as
+                        sectors and sub-sectors in the OECD DAC CRS standard or goals, targets and indicators in the SDG
+                        framework. Representing internal relationships within a data standard ensures that not only
+                        humans but also machines can read them in a logical manner. These relationships are grounded in
+                        Simple Knowledge Organisation System (SKOS) a common model for linking and organising
+                        information.
+                    </p>
+
+                    <p class="heading">
+                        8. What is a ‘broader matching concept’, ‘exactly matching concept’, ‘narrower matching concept’
+                        or ‘close matching’ concept?
+                    </p>
+
+                    <p>As with the broader and narrower concepts described in question 7, these terms relate to the
+                        relationships between the term you have selected and others. However, these are the matches that
+                        are made across other standards within the network.
+                        The relationships denoted by broader/narrower/exactly/ close matching concept help build the
+                        data standards map that sits at the heart of the Joined-up Data Standards Navigator.
+                    </p>
+
+                    <img src="resource/images/image8.png" alt="adasda" style="width: 480px">
+
+                    <p>Similar to the previous question, broader matching concepts refer to fields in other standards
+                        related to the one you have selected, but that are more general in their focus. In the example
+                        above, ISIC’s field ‘agriculture forestry and fishing’ is broader than the OECD DAC CRS sector
+                        code ‘agriculture’.
+                    </p>
+
+                    <p>
+                        Exactly matching concepts refer to fields in other standards that are a direct match for the one
+                        that you have selected. In this example, UN Classification Of Functions Of Government’s
+                        ‘agriculture’ is a direct match to the CRS sector code ‘agriculture’
+                    </p>
+
+                    <p>
+                        Narrower matching concepts refer to fields in other standards that relate to the one you have
+                        selected but that are more specific. In this example, the SDG indicator ‘Correct and prevent
+                        trade restrictions’ relates to the CRS sector code ‘agriculture’ but is more specific in its
+                        focus.
+                    </p>
+
+                    <p>
+                        You may also see a close matching concept, which refers to a field in another standard that, by
+                        W3C standards, is sufficiently similar that it can be used interchangeably with the field you’ve
+                        selected.
+                    </p>
+
+
+                    <h4 class="heading">
+                        <strong>Joined-up Data Standards Navigator spreadsheet tool</strong>
+                    </h4>
+
+                    <p class="heading">
+                        9. What is the Joined-up Data Standard Navigator spreadsheet tool?
+                    </p>
+
+                    <p>
+                        Our spreadsheet tool allows you to get the best translation from one sector code to another or
+                        to retrieve a relevant international code for a given country from directly within the
+                        spreadsheet you are working in.
+                    </p>
+
+                    <p>Currently the tool is available as a Google Sheet Add-on. It can be used directly in a Google
+                        Sheet and results can be downloaded in Microsoft Excel format. A Microsoft Excel macro will be
+                        available in the future.
+                    </p>
+
+                    <p>How to get the tool</p>
+                    <ol>
+                        <li>From your active Google Sheet, select “Get add-ons” from the top “Add-ons” menu.</li>
+                        <li>Search for "Joined-up Data Standard Navigator spreadsheet tool"</li>
+                        <li>Click on '+ FREE'</li>
+                        <li>Sign in to your Google Account if prompted</li>
+                        <li> Review the summary of add-on’s requirements and select 'Allow'.</li>
+                        <li>JUDS Navigator spreadsheet tool’ is now available in your 'Add-on' dropdown menu within your
+                            Google Sheet.
+                        </li>
+                    </ol>
+
+                    <p class="heading">Function: translateSectorCode()</p>
+
+                    <p>This function returns the best translation between codes used by data standards describing
+                        socio-economic sectors and economic activities. These include: OECD DAC CRS (crs), UN
+                        Classification of Functions of Government (cofog), UN International Standard Industrial
+                        Classification of All Economic Activities (isic), IRS National Taxonomy of Exemption Entities
+                        (ntee) or World Bank themes (world_bank_themes) and sectors (world_bank_sectors).
+                    </p>
+
+                    <p>
+                        The abbreviations used by the function to recognise individual data standards are shown in bold
+                        red and in brackets in the list above.
+                    </p>
+                    <p>
+                        To use the function, select the cells containing, or enter directly into the function:
+                    </p>
+                    <ul>
+                        <li>where to translate the code from,</li>
+                        <li>which standard to translate to</li>
+                        <li>the sector code from the data standard you wish to translate from</li>
+                    </ul>
+
+                    <p>
+                        Example: to translate from OECD DAC CRS code 323 (“Construction”) to UN International Standard
+                        Industrial Classification of All Economic Activities, the function would be:
+                    </p>
+
+                    <img src="resource/images/image11.png" alt="adasda" style="width: 480px">
+
+                    <p>
+                        Cell A1 denotes the starting classification, B1 is the standard to translate to and C1 is the
+                        code I need to translate. D1 denotes the cell where the output to the above query is displayed.
+                        In this example, “F” is the code for “construction” in ISIC data standard.
+                    </p>
+
+                    <p>
+                        This function first searches for an exact or close match. If there is not an exact or close
+                        match, the function delivers a broader search result, along with a notification.
+                    </p>
+
+                    <img src="resource/images/image10.png" alt="adasda" style="width: 480px">
+
+                    <p>When no match can be found the function simply returns a notification. </p>
+
+                    <img src="resource/images/image9.png" alt="adasda" style="width: 480px">
+
+                    <p class="heading">Function: translateGeoCode()</p>
+
+                    <p>This function allows you to retrieve the following codes for each country: OECD DAC recipient or
+                        donor code (dac), UN FAO country code (faostat_num), FAO Global Administrative Unit Layer
+                        (gaul_num), IMF IFS code (imf_ifs), ISO 2 (iso_2), ISO 3 (iso_3), UN country code (un_num).
+                    </p>
+
+                    <p>
+                        The abbreviations used by the function to recognise individual data standards are shown in bold
+                        red and in brackets in the list above.
+                    </p>
+
+                    <p>
+                        To use the function select the cells containing, or enter directly into the function:
+                    </p>
+                    <ul>
+                        <li>country name</li>
+                        <li>type of code to be returned.</li>
+                    </ul>
+
+                    <p>Example: to find the DAC recipient code for Belize, the function would be as follows: </p>
+
+                    <img src="resource/images/image14.png" alt="adasda" style="width: 480px">
+
+                    <p>If there is no code that matches user query, the function will return a notification:</p>
+
+                    <img src="resource/images/image13.png" alt="adasda" style="width: 480px">
+                    <br>
+
+                    <p>This function is not case sensitive and will attempt to find a given country name, even if an
+                        incomplete name is entered. For example, searching “Sao” will render results for São Tomé and
+                        Príncipe and searching for “Côte” will render results for “Côte d’Ivoire”.</p>
+
+                    <img src="resource/images/image12.png" alt="adasda" style="width: 480px">
+
 
                 </div>
             </div>

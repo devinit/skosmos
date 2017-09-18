@@ -231,7 +231,12 @@ a {
 }
 
 .heading {
-   color: #e84439 !important;
+    color: #e84439 !important;
+}
+
+.image-sizing {
+    width: 480px !important;
+    height: 320px !important;
 }
 
 /*
@@ -270,7 +275,7 @@ button.accordion:hover {
 button.accordion:after {
     content: '\2228';
     font-size: 13px;
-    color:white;
+    color: white;
     float: right;
     margin-left: 5px;
     font-weight: bold;
