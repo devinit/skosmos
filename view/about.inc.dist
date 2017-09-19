@@ -34,12 +34,9 @@
             <p>
               To solve this problem we’ve created easy-to-use tools so you can explore if and how international development data standards compare, and what relationships exist between them. You can also download our macro to apply our mappings within your own spreadsheets.
             </p>
-            <ul>
-                <li><a href="en/translate">Search and translate: </a>find out if and how data standards compare</li>
-                <li><a href="en/spreadsheet">Translate in your spreadsheet: </a>use our Google Sheet Add-on to use our mappings within your own spreadsheet</li>
-                <li>Visit our <a href="#">FAQS</a> FAQS to learn more</li>
-            </ul>
-            </p>
+                <p><a href="en/translate">Search and translate: </a>find out if and how data standards compare</p>
+                <p><a href="en/spreadsheet">Translate in your spreadsheet: </a>use our Google Sheet Add-on to use our mappings within your own spreadsheet</p>
+                <p>Visit our <a href="#">FAQS</a> FAQS to learn more</p>
           </div>
         </div>
 
